@@ -3894,7 +3894,7 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/station/hallway/primary/fore)
 "bdA" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/machinery/meter/layer2,
 /obj/machinery/firealarm/directional/east,
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -12270,7 +12270,7 @@
 "dEd" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen{
 	name = "High capacity Nitogen canister";
-	volume = 6700
+	volume = 8700
 	},
 /turf/closed/wall/r_wall,
 /area/station/engineering/supermatter/room)
@@ -19773,7 +19773,7 @@
 /turf/open/floor/catwalk_floor,
 /area/station/hallway/secondary/entry)
 "fKI" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/closed/wall/r_wall,
 /area/station/maintenance/disposal/incinerator)
 "fKL" = (
@@ -26517,7 +26517,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/corner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/iron/smooth_corner,
 /area/station/maintenance/disposal/incinerator)
 "hCV" = (
@@ -37128,7 +37128,7 @@
 /area/station/cargo/warehouse)
 "kyU" = (
 /obj/machinery/igniter/incinerator_atmos,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/engine,
 /area/station/maintenance/disposal/incinerator)
 "kyV" = (
@@ -41885,7 +41885,7 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/station/command/heads_quarters/rd)
 "lKO" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/structure/sign/poster/official/moth_piping/directional/east,
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 4
@@ -44652,7 +44652,7 @@
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "mzm" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/machinery/light/directional/west,
 /turf/open/floor/engine,
 /area/station/maintenance/disposal/incinerator)
@@ -58575,7 +58575,7 @@
 	},
 /obj/machinery/portable_atmospherics/canister/nitrogen{
 	name = "High capacity Nitogen canister";
-	volume = 6700
+	volume = 8700
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/engineering/supermatter/room)
@@ -58854,7 +58854,7 @@
 /turf/open/floor/plating,
 /area/station/security/execution/transfer)
 "qmM" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 4
 	},
@@ -64538,6 +64538,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
+/obj/item/clothing/mask/gas/atmos,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/command/heads_quarters/ce)
 "rTp" = (
@@ -70234,6 +70235,13 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/warden)
+"tsH" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/item/clothing/mask/chameleon,
+/turf/open/floor/carpet/orange,
+/area/station/command/heads_quarters/ce)
 "tsM" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /obj/machinery/airalarm/directional/south,
@@ -112922,7 +112930,7 @@ xVm
 xVm
 xVm
 qkN
-xVm
+qdb
 xVm
 xVm
 xVm
@@ -126009,7 +126017,7 @@ tXP
 oEE
 dhx
 jDY
-vWd
+tsH
 iBF
 ygc
 aXG
