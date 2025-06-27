@@ -3946,8 +3946,8 @@
 /obj/structure/lattice,
 /obj/structure/lattice,
 /obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
-	dir = 1
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 8
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -6351,14 +6351,14 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)
 "bSC" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 10
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
+/obj/effect/turf_decal/trimline/yellow/filled/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
 "bSM" = (
@@ -8719,6 +8719,15 @@
 "cFf" = (
 /turf/open/floor/glass/reinforced,
 /area/station/security/office)
+"cFp" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/external,
+/turf/open/floor/catwalk_floor,
+/area/station/maintenance/disposal/incinerator)
 "cFr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -10332,6 +10341,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/station/maintenance/aft/greater)
+"dcO" = (
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer2,
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/station/maintenance/disposal/incinerator)
 "dcR" = (
 /obj/machinery/door/airlock/external{
 	name = "External Solar Access"
@@ -16511,12 +16525,7 @@
 /area/station/service/hydroponics)
 "eKr" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/machinery/atmospherics/components/binary/pump/off{
-	dir = 1;
-	name = "Cooling Loop Bypass"
-	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -16971,15 +16980,9 @@
 /turf/open/floor/iron/smooth,
 /area/station/hallway/secondary/construction)
 "eQX" = (
-/obj/machinery/light/small/directional/east,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron/smooth_large,
+/obj/effect/turf_decal/trimline/yellow/filled/line,
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
 "eRr" = (
 /obj/structure/table/wood/fancy/green,
@@ -18799,14 +18802,10 @@
 /turf/open/floor/iron/smooth,
 /area/station/science/robotics/mechbay)
 "fta" = (
-/obj/machinery/computer/turbine_computer{
-	dir = 1;
-	mapping_id = "main_turbine"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer2,
+/obj/effect/turf_decal/trimline/yellow/filled/corner,
+/obj/effect/turf_decal/trimline/blue/filled/corner,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
 "fth" = (
@@ -23014,13 +23013,15 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/secondary/command)
 "gGH" = (
-/obj/machinery/door/airlock/external,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/external,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
-/turf/open/floor/catwalk_floor,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/iron/smooth_large,
 /area/station/maintenance/disposal/incinerator)
 "gGT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -26405,10 +26406,15 @@
 /turf/open/space,
 /area/station/solars/port/aft)
 "hBT" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
-/turf/open/floor/iron/smooth_large,
-/area/station/maintenance/disposal/incinerator)
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 10
+	},
+/obj/structure/lattice/catwalk,
+/obj/item/stack/sheet/hot_ice,
+/obj/item/stack/sheet/hot_ice,
+/obj/item/stack/sheet/cloth,
+/turf/open/space/basic,
+/area/space/nearstation)
 "hBV" = (
 /obj/structure/table/glass,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
@@ -26458,6 +26464,15 @@
 	},
 /turf/open/floor/iron/smooth_edge,
 /area/station/science/ordnance/testlab)
+"hCx" = (
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/external,
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/catwalk_floor,
+/area/station/maintenance/disposal/incinerator)
 "hCA" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -26552,6 +26567,9 @@
 	dir = 5
 	},
 /obj/machinery/power/terminal,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
 "hDC" = (
@@ -28053,9 +28071,7 @@
 /area/station/hallway/secondary/command)
 "iae" = (
 /obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
-	dir = 1
-	},
+/obj/item/tape/frozen,
 /turf/open/space/basic,
 /area/space/nearstation)
 "iah" = (
@@ -32901,10 +32917,19 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/service/hydroponics)
 "jrv" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
-/turf/open/floor/plating,
+/obj/machinery/computer/turbine_computer{
+	dir = 8;
+	mapping_id = "main_turbine"
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
 "jrF" = (
 /turf/closed/wall,
@@ -35660,16 +35685,16 @@
 /turf/closed/wall,
 /area/station/cargo/lobby)
 "keS" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 4;
 	name = "Cooling Loop to Gas"
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 9
 	},
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
@@ -36651,12 +36676,14 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "kth" = (
-/obj/machinery/door/airlock/external,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/external,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/turf/open/floor/catwalk_floor,
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 10
+	},
+/turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
 "ktl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -38083,6 +38110,16 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/smooth_edge,
 /area/station/hallway/secondary/entry)
+"kJL" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
+/area/station/maintenance/disposal/incinerator)
 "kJQ" = (
 /obj/structure/closet/emcloset/wall{
 	pixel_x = -32
@@ -38489,8 +38526,8 @@
 "kPW" = (
 /obj/structure/lattice,
 /obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
-	dir = 1
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 6
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -38936,6 +38973,19 @@
 	dir = 1
 	},
 /area/station/security/prison)
+"kWg" = (
+/obj/machinery/atmospherics/components/binary/pump/on{
+	name = "Gas to Cooling Loop"
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 10
+	},
+/turf/open/floor/iron/smooth,
+/area/station/maintenance/disposal/incinerator)
 "kWh" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/siding/yellow/corner{
@@ -44960,6 +45010,14 @@
 	},
 /turf/open/floor/plating,
 /area/station/science/robotics/mechbay)
+"mEm" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 8
+	},
+/obj/structure/lattice/catwalk,
+/obj/item/stack/sheet/hot_ice,
+/turf/open/space/basic,
+/area/space/nearstation)
 "mEC" = (
 /obj/machinery/atmospherics/pipe/smart/simple/dark/hidden{
 	dir = 5
@@ -48046,11 +48104,17 @@
 /turf/open/floor/iron/smooth_large,
 /area/station/cargo/warehouse)
 "nvG" = (
-/obj/structure/marker_beacon/burgundy,
-/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/machinery/meter,
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
+/area/station/maintenance/disposal/incinerator)
 "nvH" = (
 /obj/effect/turf_decal/trimline/blue/filled/warning{
 	dir = 8
@@ -53327,6 +53391,7 @@
 /area/station/command/bridge)
 "oTk" = (
 /obj/structure/barricade/wooden/snowed,
+/obj/item/clothing/accessory/medal/silver/emergency_services/engineering,
 /turf/open/floor/plating,
 /area/space/nearstation)
 "oTp" = (
@@ -60678,6 +60743,19 @@
 	},
 /turf/open/floor/iron/dark/smooth_edge,
 /area/station/security/brig)
+"qPy" = (
+/obj/machinery/atmospherics/components/binary/pump/off{
+	dir = 1;
+	name = "Cooling Loop Bypass"
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
+/area/station/maintenance/disposal/incinerator)
 "qPI" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/purple/visible,
@@ -70289,6 +70367,17 @@
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/engineering/transit_tube)
+"tuR" = (
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer2,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 6
+	},
+/turf/open/floor/iron/smooth,
+/area/station/maintenance/disposal/incinerator)
 "tuU" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -72317,6 +72406,11 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/station/command/heads_quarters/ce)
+"tYi" = (
+/obj/structure/barricade/wooden,
+/obj/item/stack/sheet/bone,
+/turf/open/floor/plating,
+/area/space/nearstation)
 "tYp" = (
 /obj/machinery/chem_mass_spec,
 /obj/effect/turf_decal/trimline/yellow/filled/line,
@@ -80582,11 +80676,8 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/brig)
 "wlU" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8;
-	name = "Gas to Cooling Loop"
-	},
 /obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /turf/open/space/basic,
 /area/space/nearstation)
 "wlV" = (
@@ -85487,7 +85578,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/violet,
+/obj/machinery/atmospherics/pipe/smart/manifold/dark/visible{
+	dir = 4
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "xFD" = (
@@ -111031,7 +111124,7 @@ oHi
 bVL
 lFE
 bdS
-tZZ
+iae
 xMq
 ttw
 ttw
@@ -111546,8 +111639,8 @@ tjr
 drw
 rin
 rin
-iae
-tZZ
+lFE
+odJ
 xMq
 ttw
 ttw
@@ -111804,7 +111897,7 @@ gMd
 rin
 rin
 rin
-iae
+jSm
 tZZ
 xMq
 ttw
@@ -112054,7 +112147,7 @@ ttC
 tot
 deE
 wTj
-jVZ
+tYi
 uiI
 nbt
 rin
@@ -112312,7 +112405,7 @@ urO
 deE
 mwR
 jVZ
-jWo
+mEm
 uUR
 nAf
 rin
@@ -112569,7 +112662,7 @@ fon
 deE
 gyG
 oTk
-kaU
+hBT
 nbt
 lFE
 ejQ
@@ -112832,7 +112925,7 @@ qkN
 xVm
 xVm
 xVm
-odJ
+xVm
 wlU
 xMq
 ttw
@@ -113087,9 +113180,9 @@ snT
 xVm
 keS
 kth
-eQX
+xVm
 gGH
-fYl
+hCx
 wbL
 xMq
 ttw
@@ -113343,10 +113436,10 @@ mdz
 mdz
 hBo
 bSC
+eQX
 xVm
+cFp
 xVm
-xVm
-odJ
 xtG
 xMq
 ttw
@@ -113598,12 +113691,12 @@ jPc
 pnB
 uAf
 jPc
-hBT
+jPc
 eKr
+qPy
+kJL
+kWg
 ksI
-odJ
-odJ
-odJ
 xtG
 xMq
 ttw
@@ -113858,10 +113951,10 @@ oZp
 oMm
 fta
 jrv
+nvG
+tuR
+dcO
 jnc
-odJ
-odJ
-xtG
 xMq
 ttw
 ttw
@@ -114114,11 +114207,11 @@ xVm
 xVm
 hDg
 wKm
-oaD
+xVm
 rYv
 rYv
-oaD
-nvG
+xVm
+xqO
 xMq
 ttw
 ttw
@@ -114375,7 +114468,7 @@ xVm
 hgb
 hgb
 xVm
-odJ
+xqO
 xMq
 ttw
 ttw
