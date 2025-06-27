@@ -1508,6 +1508,21 @@
 	},
 /obj/item/stack/cable_coil,
 /obj/machinery/light_switch/directional/north,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
 /turf/open/floor/iron/dark,
 /area/station/engineering/supermatter/room)
 "avX" = (
@@ -9087,6 +9102,11 @@
 	dir = 1
 	},
 /area/station/medical/virology)
+"cJc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/decoration/glowstick/on,
+/turf/open/floor/iron/smooth,
+/area/station/maintenance/department/engine)
 "cJm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/cardboard,
@@ -9384,7 +9404,7 @@
 /turf/open/floor/iron/grimy,
 /area/station/hallway/primary/central/fore)
 "cON" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
+/obj/machinery/atmospherics/components/trinary/mixer,
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 6
 	},
@@ -9392,7 +9412,6 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/meter,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
 "cOS" = (
@@ -14504,6 +14523,21 @@
 	pixel_y = 5
 	},
 /obj/structure/rack,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
+/obj/item/flashlight/glowstick/orange,
 /turf/open/floor/iron/dark,
 /area/station/engineering/supermatter/room)
 "egJ" = (
@@ -14520,6 +14554,7 @@
 	name = "atmospherics camera";
 	network = list("ss13","engine")
 	},
+/obj/effect/spawner/random/decoration/glowstick/on,
 /turf/open/floor/iron/smooth_edge,
 /area/station/engineering/atmos)
 "egK" = (
@@ -16462,6 +16497,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/warning{
 	dir = 1
 	},
+/obj/machinery/meter,
 /turf/open/floor/iron/smooth_edge,
 /area/station/maintenance/disposal/incinerator)
 "eJk" = (
@@ -17088,7 +17124,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/greater)
 "eTv" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible/layer1,
+/obj/machinery/atmospherics/pipe/layer_manifold/general/visible,
 /turf/closed/wall/r_wall,
 /area/station/maintenance/disposal/incinerator)
 "eTD" = (
@@ -17327,6 +17363,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/dark/visible{
 	dir = 4
 	},
+/obj/effect/spawner/random/decoration/glowstick/on,
 /turf/open/floor/iron/smooth_large,
 /area/station/engineering/atmos)
 "eVW" = (
@@ -17590,7 +17627,9 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/science/ordnance_maint)
 "faq" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible{
+	dir = 10
+	},
 /turf/open/floor/iron/smooth_large,
 /area/station/maintenance/disposal/incinerator)
 "faR" = (
@@ -26386,6 +26425,7 @@
 "hBC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
+/obj/effect/spawner/random/decoration/glowstick/on,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/engine/atmos/lesser)
 "hBH" = (
@@ -38434,7 +38474,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/warning{
 	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/layer_manifold/general/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/disposal/incinerator)
 "kOY" = (
@@ -44188,7 +44228,9 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible{
+	dir = 5
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -46487,6 +46529,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
+/obj/effect/spawner/random/decoration/glowstick/on,
 /turf/open/floor/iron/smooth_edge{
 	dir = 4
 	},
@@ -52721,6 +52764,13 @@
 	dir = 1
 	},
 /area/station/hallway/primary/aft)
+"oJx" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/item/clothing/mask/chameleon,
+/turf/open/floor/carpet/orange,
+/area/station/command/heads_quarters/ce)
 "oJD" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -59919,6 +59969,13 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/station/service/kitchen/coldroom)
+"qDo" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/spawner/random/decoration/glowstick/on,
+/turf/open/floor/plating,
+/area/station/maintenance/department/engine)
 "qDp" = (
 /obj/structure/chair/office/light,
 /obj/effect/turf_decal/trimline/neutral/filled/warning,
@@ -64259,6 +64316,7 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/engineering/atmos)
 "rOQ" = (
+/obj/effect/spawner/random/decoration/glowstick/on,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/engine/atmos)
 "rPp" = (
@@ -70235,13 +70293,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/warden)
-"tsH" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
-/obj/item/clothing/mask/chameleon,
-/turf/open/floor/carpet/orange,
-/area/station/command/heads_quarters/ce)
 "tsM" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /obj/machinery/airalarm/directional/south,
@@ -76564,6 +76615,15 @@
 	dir = 4
 	},
 /area/station/hallway/primary/aft)
+"vdN" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible/layer1,
+/obj/effect/spawner/random/decoration/glowstick/on,
+/turf/open/floor/plating,
+/area/station/maintenance/department/engine)
 "vdV" = (
 /obj/machinery/light/small/directional/north,
 /obj/effect/spawner/random/trash/moisture_trap,
@@ -77480,6 +77540,7 @@
 "vsH" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/space_heater,
+/obj/effect/spawner/random/decoration/glowstick/on,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/engine/atmos/lesser)
 "vsS" = (
@@ -77512,6 +77573,10 @@
 	},
 /turf/open/floor/plating,
 /area/station/engineering/main)
+"vtk" = (
+/obj/effect/spawner/random/decoration/glowstick/on,
+/turf/open/floor/iron/smooth_large,
+/area/station/engineering/atmos)
 "vtr" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/chaplainsuit/holidaypriest,
@@ -112372,7 +112437,7 @@ ltK
 hLI
 dYh
 aCW
-dYh
+vtk
 hFA
 hrq
 hrq
@@ -114178,7 +114243,7 @@ dYh
 dYh
 dYh
 kVc
-dYh
+vtk
 vLz
 hTr
 pie
@@ -118822,7 +118887,7 @@ rin
 lFE
 pEt
 veD
-shg
+vdN
 cGZ
 kzc
 vQS
@@ -121136,7 +121201,7 @@ hUc
 dql
 pEt
 eUp
-gXR
+cJc
 rYy
 qbp
 oWM
@@ -123705,7 +123770,7 @@ oCl
 oCl
 pEt
 gug
-kux
+qDo
 wHN
 qbp
 qbp
@@ -126017,7 +126082,7 @@ tXP
 oEE
 dhx
 jDY
-tsH
+oJx
 iBF
 ygc
 aXG
