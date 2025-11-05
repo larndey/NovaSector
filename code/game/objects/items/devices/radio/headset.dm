@@ -7,6 +7,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_ENGINEERING = RADIO_TOKEN_ENGINEERING,
 	RADIO_CHANNEL_SECURITY = RADIO_TOKEN_SECURITY,
 	RADIO_CHANNEL_CENTCOM = RADIO_TOKEN_CENTCOM,
+	RADIO_CHANNEL_PHOENIX = RADIO_TOKEN_PHOENIX, // EXONOVA EDIT ADDITION - PHOENIX COLLECTIVE
 	RADIO_CHANNEL_FACTION = RADIO_TOKEN_FACTION, //NOVA EDIT ADDITION - Faction
 	RADIO_CHANNEL_CYBERSUN = RADIO_TOKEN_CYBERSUN, //NOVA EDIT ADDITION - Mapping
 	RADIO_CHANNEL_INTERDYNE = RADIO_TOKEN_INTERDYNE, //NOVA EDIT ADDITION - Mapping
@@ -189,18 +190,30 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "team leader headset"
 	command = TRUE
 
-//EXOBYTECHNOVA UPD: phoenix collective headset, modded syndie tech i guess
-/obj/item/radio/headset/phoenixcc
-	name = "Phoenix Collective CentCom headset"
-	desc = "A headset used by Phoenix Collective Central Command staff. Protects ears from flashbangs. (Will get its texture changed later.)"
-	icon_state = "syndie_headset"
-	worn_icon_state = "syndie_headset"
-	keyslot = /obj/item/encryptionkey/heads/captain
-	keyslot2 = /obj/item/encryptionkey/headset_cent
+//EXOBYTECHNOVA UPD: phoenix collective headsets, originally "modded syndie tech" but now it's alt sec headset
+/obj/item/radio/headset/phoenix
+	name = "Phoenix Collective imperial headset"
+	desc = "A headset used by Phoenix Collective imperials. Protects ears from flashbangs."
+	icon_state = "sec_headset_alt"
+	worn_icon_state = "sec_headset_alt"
+	keyslot = /obj/item/encryptionkey/phoenix
 
-/obj/item/radio/headset/phoenixcc/Initialize(mapload)
+/obj/item/radio/headset/phoenix/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection)
+
+/obj/item/radio/headset/phoenix/ert
+	keyslot = /obj/item/encryptionkey/phoenix/ert
+
+/obj/item/radio/headset/phoenix/ert/cmdr
+	keyslot = /obj/item/encryptionkey/phoenix/ert/cmdr
+	command = TRUE
+
+/obj/item/radio/headset/phoenix/cc
+	name = "Phoenix Collective CentCom headset"
+	desc = "A headset used by Phoenix Collective Central Command staff. Protects ears from flashbangs."
+	keyslot = /obj/item/encryptionkey/phoenix/centcom
+	command = TRUE
 // EXOBYTECHNOVA UPDATE END
 
 /obj/item/radio/headset/binary

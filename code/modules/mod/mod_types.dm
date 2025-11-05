@@ -430,10 +430,12 @@
 		/obj/item/mod/module/rad_protection,
 		/obj/item/mod/module/headprotector,
 		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/visor/meson,
 	)
 	additional_pins = list(
 		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/magboot/advanced,
+		/obj/item/mod/module/visor/meson,
 	)
 
 /obj/item/mod/control/pre_equipped/phoenix/medical
@@ -446,8 +448,8 @@
 		/obj/item/mod/module/jetpack,
 	)
 	additional_pins = list(
-	/obj/item/mod/module/jetpack,
-		/obj/item/mod/module/surgical_processor/emergency,
+		/obj/item/mod/module/jetpack,
+		/obj/item/mod/module/health_analyzer,
 		/obj/item/mod/module/criminalcapture/patienttransport,
 	)
 
@@ -488,6 +490,9 @@
 		/obj/item/mod/module/health_analyzer,
 		/obj/item/mod/module/rad_protection,
 		/obj/item/mod/module/headprotector,
+		/obj/item/mod/module/jetpack/advanced,
+	)
+	additional_pins = list(
 		/obj/item/mod/module/jetpack/advanced,
 	)
 // EXOBYTECHNOVA UPDATE END

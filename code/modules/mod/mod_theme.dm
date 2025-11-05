@@ -1350,9 +1350,8 @@
 	siemens_coefficient = 0
 	slowdown_deployed = 0
 	ui_theme = "ntos_terminal"
-	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/night,
-		/obj/item/mod/module/hearing_protection, /obj/item/mod/module/springlock/contractor/no_complexity,
-		/obj/item/mod/module/hat_stabilizer/syndicate)
+	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/hearing_protection,
+		/obj/item/mod/module/springlock/contractor/no_complexity, /obj/item/mod/module/hat_stabilizer/syndicate)
 	allowed_suit_storage = list(
 		/obj/item/restraints/handcuffs,
 		/obj/item/healthanalyzer,

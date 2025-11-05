@@ -77,6 +77,13 @@
 #define RADIO_CHANNEL_CTF_YELLOW "Yellow Team"
 #define RADIO_COLOR_YELLOW "#d1ba22"
 
+///EXOBYTECHNOVA UPDATE: phoenix collective radio info
+#define RADIO_CHANNEL_PHOENIX "Phoenix"
+#define RADIO_KEY_PHOENIX "a"
+#define RADIO_TOKEN_PHOENIX ":a"
+#define RADIO_COLOR_PHOENIX "#ff5d00"
+///EXOBYTECHNOVA UPD END
+
 
 #define MIN_FREE_FREQ 1201 // -------------------------------------------------
 // Frequencies are always odd numbers and range from 1201 to 1599.
@@ -115,6 +122,8 @@
 #define MIN_UNUSED_FREQ 1461 // Prevents rolling AI Private or Common
 
 #define MAX_FREQ 1489 // ------------------------------------------------------
+
+#define FREQ_PHOENIX_COLLECTIVE 1519 // exonova addition: phoenix collective
 
 #define MAX_FREE_FREQ 1599 // -------------------------------------------------
 
