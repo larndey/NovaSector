@@ -749,7 +749,7 @@
 	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
 	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
 
-/datum/outfit/phoenix/ert/medical
+/datum/outfit/phoenix/ert/medic
 	name = "Phoenix Collective ERT - Medical"
 
 	id = /obj/item/card/id/advanced/black/phoenix/ert
@@ -781,7 +781,7 @@
 	l_hand = null
 	r_hand = null
 
-/datum/outfit/phoenix/ert/medical/pm
+/datum/outfit/phoenix/ert/medic/pm
 	name = "Phoenix Collective ERT - Medical (Plasmaman)"
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman/security
@@ -811,7 +811,6 @@
 		/obj/item/ammo_box/magazine/napad = 6,
 		/obj/item/construction/rcd/loaded/upgraded = 1,
 		/obj/item/lightreplacer/blue = 1,
-		/obj/item/bag/trash/bluespace = 1,
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
