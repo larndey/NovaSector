@@ -651,17 +651,24 @@
 	default_skin = "corpsman"
 
 /// EXOBYTECHNOVA UPD: Phoenix Collective ERT definitions.
+/datum/outfit/phoenix
+	name = "Phoenix Collective Imperial"
+
+	id = /obj/item/card/id/advanced/black/phoenix
+	belt = /obj/item/modular_computer/pda/assistant
+	uniform = /obj/item/clothing/under/misc/nova/utility
+	shoes = /obj/item/clothing/shoes/jackboots/peacekeeper
+	gloves = /obj/item/clothing/gloves/color/black
+	back = /obj/item/storage/backpack/industrial/frontier_colonist
+
 /datum/outfit/phoenix/post_equip(mob/living/carbon/human/phoenixguy, visuals_only = FALSE)
 	if(visuals_only)
 		return
 	var/obj/item/implant/mindshield/mindshield = new /obj/item/implant/mindshield(phoenixguy)
 	mindshield.implant(phoenixguy, null, silent = TRUE)
 
-/datum/outfit/phoenix
-	name = "Phoenix Collective Outfit Base (DO NOT USE)"
-
 /datum/outfit/phoenix/ert/command
-	name = "Phoenix Collective ERT (Commander)"
+	name = "Phoenix Collective ERT - Commander"
 
 	id = /obj/item/card/id/advanced/black/phoenix/ert
 	belt = /obj/item/storage/medkit/frontier/phoenix/stocked
@@ -685,12 +692,22 @@
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
+		/obj/item/modular_computer/pda/ceti = 1,
 	)
 	l_hand = null
 	r_hand = null
 
+/datum/outfit/phoenix/ert/command/pm
+	name = "Phoenix Collective ERT - Commander (Plasmaman)"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+	uniform = /obj/item/clothing/under/plasmaman/security
+	gloves = /obj/item/clothing/gloves/color/plasmaman/black
+	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
+	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
+
 /datum/outfit/phoenix/ert/security
-	name = "Phoenix Collective ERT (Security)"
+	name = "Phoenix Collective ERT - Security"
 
 	id = /obj/item/card/id/advanced/black/phoenix/ert
 	belt = /obj/item/storage/medkit/frontier/phoenix/stocked
@@ -714,12 +731,22 @@
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
+		/obj/item/modular_computer/pda/ceti = 1,
 	)
 	l_hand = null
 	r_hand = null
 
+/datum/outfit/phoenix/ert/security/pm
+	name = "Phoenix Collective ERT - Security (Plasmaman)"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+	uniform = /obj/item/clothing/under/plasmaman/security
+	gloves = /obj/item/clothing/gloves/color/plasmaman/black
+	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
+	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
+
 /datum/outfit/phoenix/ert/medical
-	name = "Phoenix Collective ERT (Medical)"
+	name = "Phoenix Collective ERT - Medical"
 
 	id = /obj/item/card/id/advanced/black/phoenix/ert
 	belt = /obj/item/storage/belt/medical/ert
@@ -739,18 +766,28 @@
 		/obj/item/storage/medkit/frontier/phoenix/stocked = 1,
 		/obj/item/storage/medkit/frontier/phoenix/toxin/stocked = 1,
 		/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked = 1,
+		/obj/item/bodybag/stasis = 2,
 		/obj/item/gun/ballistic/automatic/pistol/plasma_thrower = 1,
 		/obj/item/ammo_box/magazine/recharge/plasma_battery = 3,
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/flashlight/seclite = 1,
-		/obj/item/bodybag/stasis = 2,
 		/obj/item/beamout_tool = 1,
+		/obj/item/modular_computer/pda/ceti = 1,
 	)
 	l_hand = null
 	r_hand = null
 
+/datum/outfit/phoenix/ert/medical/pm
+	name = "Phoenix Collective ERT - Medical (Plasmaman)"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+	uniform = /obj/item/clothing/under/plasmaman/security
+	gloves = /obj/item/clothing/gloves/color/plasmaman/black
+	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
+	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
+
 /datum/outfit/phoenix/ert/engie
-	name = "Phoenix Collective ERT (Engineering)"
+	name = "Phoenix Collective ERT - Engineering"
 
 	id = /obj/item/card/id/advanced/black/phoenix/ert
 	belt = /obj/item/storage/belt/utility/chief/full
@@ -774,6 +811,16 @@
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
+		/obj/item/modular_computer/pda/ceti = 1,
 	)
 	l_hand = null
 	r_hand = null
+
+/datum/outfit/phoenix/ert/engie/pm
+	name = "Phoenix Collective ERT - Engineering (Plasmaman)"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+	uniform = /obj/item/clothing/under/plasmaman/security
+	gloves = /obj/item/clothing/gloves/color/plasmaman/black
+	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
+	r_pocket = /obj/item/tank/internals/plasmaman/belt/full

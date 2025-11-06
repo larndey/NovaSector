@@ -314,8 +314,10 @@
 /datum/antagonist/ert/phoenix
 	name = "Phoenix Collective Responsory Unit Field Commander"
 	outfit = /datum/outfit/phoenix/ert/command
+	plasmaman_outfit = /datum/outfit/phoenix/ert/command/pm
 	role = "Imperial Field Commander"
 	rip_and_tear = TRUE
+	suicide_cry = "FOR THE COLLECTIVE!!!"
 
 /datum/antagonist/ert/phoenix/greet()
 	if(!ert_team)
@@ -343,14 +345,17 @@
 /datum/antagonist/ert/phoenix/security
 	name = "Phoenix Collective Responsory Unit Trooper"
 	outfit = /datum/outfit/phoenix/ert/security
+	plasmaman_outfit = /datum/outfit/phoenix/ert/security/pm
 	role = "Imperial Soldier"
 
 /datum/antagonist/ert/phoenix/medical
 	name = "Phoenix Collective Responsory Unit Medic"
 	outfit = /datum/outfit/phoenix/ert/medic
+	plasmaman_outfit = /datum/outfit/phoenix/ert/medic/pm
 	role = "Imperial Medic"
 
 /datum/antagonist/ert/phoenix/engie
 	name = "Phoenix Collective Responsory Unit Engineer"
 	outfit = /datum/outfit/phoenix/ert/engie
+	plasmaman_outfit = /datum/outfit/phoenix/ert/engie/pm
 	role = "Imperial Engineer"
