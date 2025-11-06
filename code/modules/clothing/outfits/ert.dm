@@ -667,6 +667,10 @@
 	var/obj/item/implant/mindshield/mindshield = new /obj/item/implant/mindshield(phoenixguy)
 	mindshield.implant(phoenixguy, null, silent = TRUE)
 
+	var/obj/item/card/id/ID = phoenixguy.wear_id
+	ID.registered_name = phoenixguy.real_name
+	ID.update_label()
+
 /datum/outfit/phoenix/ert/command
 	name = "Phoenix Collective ERT - Commander"
 

@@ -317,7 +317,7 @@
 	plasmaman_outfit = /datum/outfit/phoenix/ert/command/pm
 	role = "Imperial Field Commander"
 	rip_and_tear = TRUE
-	suicide_cry = "FOR THE COLLECTIVE!!!"
+	suicide_cry = "FOR THE COLLECTIVE!!"
 
 /datum/antagonist/ert/phoenix/greet()
 	if(!ert_team)

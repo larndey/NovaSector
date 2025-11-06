@@ -7992,6 +7992,7 @@
 #include "modular_nova\modules\customization\modules\language\shadowtongue.dm"
 #include "modular_nova\modules\customization\modules\language\siiktajr.dm"
 #include "modular_nova\modules\customization\modules\language\skrell.dm"
+#include "modular_nova\modules\customization\modules\language\solfed.dm"
 #include "modular_nova\modules\customization\modules\language\spacer.dm"
 #include "modular_nova\modules\customization\modules\language\te_velu_akko.dm"
 #include "modular_nova\modules\customization\modules\language\terrum.dm"
