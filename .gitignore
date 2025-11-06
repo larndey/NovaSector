@@ -262,4 +262,7 @@ define_sanity_output.txt
 # Running OpenDream locally
 tgstation.json
 rust_g64.dll
+
+# for exonova dev, SHUT THE FUCK UP GITHUB
+# i don't want to enable ERP by default but i'd like it in my dev area.
 /config/nova/config_nova.txt
