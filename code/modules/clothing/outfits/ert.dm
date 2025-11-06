@@ -674,7 +674,7 @@
 /datum/outfit/phoenix/ert/command
 	name = "Phoenix Collective ERT - Commander"
 
-	id = /obj/item/card/id/advanced/black/phoenix/ert
+	id = /obj/item/card/id/advanced/black/phoenix/ert/cmdr
 	belt = /obj/item/storage/medkit/frontier/phoenix/stocked
 	suit = /obj/item/clothing/suit/armor/vest/sol/marine/mk2
 	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix
@@ -713,7 +713,7 @@
 /datum/outfit/phoenix/ert/security
 	name = "Phoenix Collective ERT - Security"
 
-	id = /obj/item/card/id/advanced/black/phoenix/ert
+	id = /obj/item/card/id/advanced/black/phoenix/ert/sec
 	belt = /obj/item/storage/medkit/frontier/phoenix/stocked
 	suit = /obj/item/clothing/suit/armor/vest/sol/marine/mk2
 	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix
@@ -752,7 +752,7 @@
 /datum/outfit/phoenix/ert/medic
 	name = "Phoenix Collective ERT - Medical"
 
-	id = /obj/item/card/id/advanced/black/phoenix/ert
+	id = /obj/item/card/id/advanced/black/phoenix/ert/med
 	belt = /obj/item/storage/belt/medical/ert
 	suit = /obj/item/clothing/suit/armor/vest/sol/marine/mk2
 	suit_store = /obj/item/gun/medbeam
@@ -793,7 +793,7 @@
 /datum/outfit/phoenix/ert/engie
 	name = "Phoenix Collective ERT - Engineering"
 
-	id = /obj/item/card/id/advanced/black/phoenix/ert
+	id = /obj/item/card/id/advanced/black/phoenix/ert/eng
 	belt = /obj/item/storage/belt/utility/chief/full
 	suit = /obj/item/clothing/suit/armor/vest/sol/marine/mk2
 	suit_store = /obj/item/gun/ballistic/automatic/napad
