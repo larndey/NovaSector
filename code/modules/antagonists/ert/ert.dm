@@ -316,6 +316,7 @@
 	outfit = /datum/outfit/phoenix/ert/command
 	plasmaman_outfit = /datum/outfit/phoenix/ert/command/pm
 	role = "Imperial Field Commander"
+	leader = TRUE
 	rip_and_tear = TRUE
 	suicide_cry = "FOR THE COLLECTIVE!!"
 
@@ -325,8 +326,8 @@
 
 	. = ..()
 
-	var/phoenixroleplaywarning = span_userdanger("As a member of Phoenix Collective's Imperial population, you are bound by the Phoenix Collective Imperial Operational Policy.")
-	phoenixroleplaywarning += span_userdanger(" You must follow these universal policies:")
+	var/phoenixroleplaywarning = span_userdanger("<BR>As a member of Phoenix Collective's Imperial population, you are bound by the Phoenix Collective Imperial Operational Policy.")
+	phoenixroleplaywarning += span_userdanger(" You must follow these universal rules:")
 	phoenixroleplaywarning += span_danger("<BR>1. You may not use lethal force against another sentient being, unless that sentient being is posing a direct and immediate threat to \
 		the life of another sentient being.")
 	phoenixroleplaywarning += span_danger("<BR>2. You may not, under any circumstances, take an action that directly defies or goes against the orders of a higher authority, unless \
@@ -347,15 +348,18 @@
 	outfit = /datum/outfit/phoenix/ert/security
 	plasmaman_outfit = /datum/outfit/phoenix/ert/security/pm
 	role = "Imperial Soldier"
+	leader = FALSE
 
 /datum/antagonist/ert/phoenix/medical
 	name = "Phoenix Collective Responsory Unit Medic"
 	outfit = /datum/outfit/phoenix/ert/medic
 	plasmaman_outfit = /datum/outfit/phoenix/ert/medic/pm
 	role = "Imperial Medic"
+	leader = FALSE
 
 /datum/antagonist/ert/phoenix/engie
 	name = "Phoenix Collective Responsory Unit Engineer"
 	outfit = /datum/outfit/phoenix/ert/engie
 	plasmaman_outfit = /datum/outfit/phoenix/ert/engie/pm
 	role = "Imperial Engineer"
+	leader = FALSE
