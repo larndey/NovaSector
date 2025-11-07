@@ -29,12 +29,12 @@
 	can_suppress = FALSE
 
 	burst_size = 1
-	fire_delay = 0.55 SECONDS
+	fire_delay = 0.2 SECONDS
 	actions_types = list()
 
 	// This thing shoots faster then the Zashch, but the DPS and killing speed should not be that fast overall
-	projectile_wound_bonus = -10
-	projectile_damage_multiplier = 0.65
+	projectile_wound_bonus = -15
+	projectile_damage_multiplier = 0.4
 	spread = 6
 
 	lore_blurb = "<i>The 'Napadayuschiy' is a heavy sub-machine gun with a focus on reliability and a very large magazine size.<br><br>\
