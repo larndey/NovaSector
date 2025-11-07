@@ -731,6 +731,7 @@
 		/obj/item/ammo_box/magazine/pulse/extended = 4,
 		/obj/item/gun/energy/disabler/smg = 1,
 		/obj/item/storage/box/alienhandcuffs = 1,
+		/obj/item/storage/box/fragnades = 1,
 		/obj/item/storage/box/flashbangs = 1,
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/flashlight/seclite = 1,
