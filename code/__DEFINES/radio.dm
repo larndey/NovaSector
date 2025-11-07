@@ -79,8 +79,8 @@
 
 ///EXOBYTECHNOVA UPDATE: phoenix collective radio info
 #define RADIO_CHANNEL_PHOENIX "Phoenix"
-#define RADIO_KEY_PHOENIX "a"
-#define RADIO_TOKEN_PHOENIX ":a"
+#define RADIO_KEY_PHOENIX "6"
+#define RADIO_TOKEN_PHOENIX ":6"
 #define RADIO_COLOR_PHOENIX "#ff5d00"
 ///EXOBYTECHNOVA UPD END
 
