@@ -1405,10 +1405,10 @@
 	)
 
 /datum/armor/mod_theme_phoenix
-	melee = 70
-	bullet = 65
-	laser = 70
-	energy = 60
+	melee = 50
+	bullet = 50
+	laser = 80
+	energy = 75
 	bomb = 50
 	bio = 100
 	fire = 100
