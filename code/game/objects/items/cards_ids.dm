@@ -1466,16 +1466,16 @@
 
 	return ..()
 
-/// EXOBYTECHNOVA UPD: PHOENIX COLLECTIVE CENTCOM/ERT ID CARDS
+/// EXOBYTECHNOVA UPD: PHOENIX COLLECTIVE ID CARD OBJECTS
 /obj/item/card/id/advanced/black/phoenix
 	name = "phoenix collective ID card"
 	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors."
 	trim = /datum/id_trim/phoenixcollective
-	wildcard_slots = WILDCARD_LIMIT_PLATINUM
+	wildcard_slots = WILDCARD_LIMIT_GREY
 
 /obj/item/card/id/advanced/black/phoenix/ert
-	name = "phoenix collective military ID"
-	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors."
+	name = "phoenix collective responder ID"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for use by Emergency Response Teams."
 	trim = /datum/id_trim/phoenixcollective/ert
 	wildcard_slots = WILDCARD_LIMIT_CENTCOM
 
@@ -1497,8 +1497,14 @@
 
 /obj/item/card/id/advanced/black/phoenix/centcom
 	name = "phoenix collective centcom ID"
-	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors."
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for Central Command officials and representatives."
 	trim = /datum/id_trim/phoenixcollective/official
+	wildcard_slots = WILDCARD_LIMIT_CENTCOM
+
+/obj/item/card/id/advanced/black/phoenix/centcom/secops
+	name = "phoenix collective secops ID"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for Sector Operations officials and representatives."
+	trim = /datum/id_trim/phoenixcollective/official/secops
 	wildcard_slots = WILDCARD_LIMIT_CENTCOM
 
 /// EXOBYTECHNOVA UPD END
