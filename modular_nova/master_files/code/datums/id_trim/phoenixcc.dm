@@ -26,12 +26,12 @@
 /datum/id_trim/phoenixcollective/ert/med
 	assignment = "PCI-DMO Responsory Medic"
 	subdepartment_color = COLOR_MEDICAL_BLUE
-	sechud_icon_state = SECHUD_ENGINEERING_RESPONSE_OFFICER
+	sechud_icon_state = SECHUD_MEDICAL_RESPONSE_OFFICER
 
 /datum/id_trim/phoenixcollective/ert/eng
 	assignment = "PCI-DMO Responsory Engineer"
 	subdepartment_color = COLOR_ENGINEERING_ORANGE
-	sechud_icon_state = SECHUD_MEDICAL_RESPONSE_OFFICER
+	sechud_icon_state = SECHUD_ENGINEERING_RESPONSE_OFFICER
 
 /datum/id_trim/phoenixcollective/ert/New()
 	. = ..()
