@@ -34,7 +34,7 @@
 
 	// This thing shoots faster then the Zashch, but the DPS and killing speed should not be that fast overall
 	projectile_wound_bonus = -15
-	projectile_damage_multiplier = 0.4
+	projectile_damage_multiplier = 0.35
 	spread = 6
 
 	lore_blurb = "<i>The 'Napadayuschiy' is a heavy sub-machine gun with a focus on reliability and a very large magazine size.<br><br>\
