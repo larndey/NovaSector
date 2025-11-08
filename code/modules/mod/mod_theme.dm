@@ -1335,9 +1335,9 @@
 	name = "phoenix"
 	desc = "An elite MOD suit modified and improved by the Phoenix Collective to serve a wider variety of purposes. \
 		Those who wear this do not fly with children of the dust."
-	extended_desc = "A retrofitting of the Syndicate elite suit, the Imperial Mk. IV model is meant as a general purpose MOD suit \
-		applicable to a wide variety of possible roles. The design has been mass produced for the Phoenix Collective's imperial population \
-		to make use of, regardless of what their roles may be. While the primarily used by combat units such as security personnel, non-combat \
+	extended_desc = "A retrofitting of the Syndicate elite suit, the Imperial Mk. IV model is meant as a general purpose MOD suit designed for \
+		application to a wide variety of possible roles. The design has been mass produced for the Phoenix Collective's imperial population \
+		to make use of, regardless of what their roles may be. Although primarily used by combat units such as security personnel, non-militant \
 		departments such as Engineering and Medical have still managed to get use out of this design, albeit with some modifications. \
 		<BR><BR>A label on the inside of the suit's panel reads as follows: 'Manufactured by the Phoenix Collective Department of \
 		Industry. Property of the Collective. For usage by Imperial personnel only. Unauthorized usage is punishable by law.'"
