@@ -1353,6 +1353,8 @@
 	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/hearing_protection,
 		/obj/item/mod/module/springlock/contractor/no_complexity)
 	allowed_suit_storage = list(
+		/obj/item/tank/internals,
+		/obj/item/flashlight,
 		/obj/item/restraints/handcuffs,
 		/obj/item/healthanalyzer,
 		/obj/item/assembly/flash,
@@ -1363,10 +1365,11 @@
 		/obj/item/reagent_containers/hypospray,
 		/obj/item/reagent_containers/applicator/pill,
 		/obj/item/reagent_containers/syringe,
-		/obj/item/gun,
 		/obj/item/melee/baton,
-		/obj/item/melee/energy/sword,
+		/obj/item/knife/combat,
+		/obj/item/gun,
 		/obj/item/shield/energy,
+		/obj/item/shield/riot,
 		/obj/item/storage/medkit,
 	)
 	variants = list(
