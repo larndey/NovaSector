@@ -1,5 +1,3 @@
-
-
 /obj/item/gun/ballistic/automatic/napad
 	name = "\improper 'Napad' Submachine Gun"
 	desc = "A bulky, 10mm submachine gun with sizeable magazines holding a close relation to the Zashchitnik pistol. Designated 'Napadayuschiy'."
@@ -29,12 +27,12 @@
 	can_suppress = FALSE
 
 	burst_size = 1
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.55 SECONDS
 	actions_types = list()
 
 	// This thing shoots faster then the Zashch, but the DPS and killing speed should not be that fast overall
-	projectile_wound_bonus = -15
-	projectile_damage_multiplier = 0.35
+	projectile_wound_bonus = -10
+	projectile_damage_multiplier = 0.65
 	spread = 6
 
 	lore_blurb = "<i>The 'Napadayuschiy' is a heavy sub-machine gun with a focus on reliability and a very large magazine size.<br><br>\
@@ -53,4 +51,17 @@
 	AddComponent(/datum/component/automatic_fire, fire_delay)
 
 /obj/item/gun/ballistic/automatic/napad/no_mag
+	spawnwithmagazine = FALSE
+
+/obj/item/gun/ballistic/automatic/napad/rapidfire
+	name = "\improper 'Napad-P' Submachine Gun"
+	desc = "A bulky, 10mm submachine gun with sizeable magazines holding a close relation to the Zashchitnik pistol. Designated 'Napadayuschiy'. \
+		This one is a rapid-fire version of the weapon intended for military use; however, the modifications have made it horribly inaccurate and drastically reduced its impact potential."
+
+	fire_delay = 0.05 SECONDS
+	projectile_wound_bonus = -30
+	projectile_damage_multiplier = 0.25
+	spread = 30 // for shredding the broad side of a barn
+
+/obj/item/gun/ballistic/automatic/napad/rapidfire/no_mag
 	spawnwithmagazine = FALSE
