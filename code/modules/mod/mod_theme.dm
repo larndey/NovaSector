@@ -1333,14 +1333,14 @@
 // EXOBYTECHNOVA UPD: Phoenix Collective MOD suit themes, based off the elite modsuit
 /datum/mod_theme/phoenix
 	name = "phoenix"
-	desc = "An elite MOD suit modified and improved by the Phoenix Collective to serve a wide variety of purposes. \
+	desc = "An elite MOD suit modified and improved by the Phoenix Collective to serve a wider variety of purposes. \
 		Those who wear this do not fly with children of the dust."
-	extended_desc = "A retrofitting of the Syndicate elite suit, this MOD suit is meant as a high-tier general purpose \
-		option, and has been mass produced for the members of Phoenix Collective's imperial populations. While the \
-		design is primarily used by combatives such as security personnel, non-combat departments such as engineering \
-		have still managed to get use out of it with some modifications.. A label on the inside of the suit's panel \
-		reads as follows: 'Manufactured by the Phoenix Collective Department of Industry. Property of the Collective. \
-		For usage by Imperial personnel only. Unauthorized usage is punishable by law.'"
+	extended_desc = "A retrofitting of the Syndicate elite suit, the Imperial Mk. IV model is meant as a general purpose MOD suit \
+		applicable to a wide variety of possible roles. The design has been mass produced for the Phoenix Collective's imperial population \
+		to make use of, regardless of what their roles may be. While the primarily used by combat units such as security personnel, non-combat \
+		departments such as Engineering and Medical have still managed to get use out of this design, albeit with some modifications. \
+		<BR><BR>A label on the inside of the suit's panel reads as follows: 'Manufactured by the Phoenix Collective Department of \
+		Industry. Property of the Collective. For usage by Imperial personnel only. Unauthorized usage is punishable by law.'"
 	default_skin = "phoenix"
 	armor_type = /datum/armor/mod_theme_phoenix
 	resistance_flags = LAVA_PROOF|FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
