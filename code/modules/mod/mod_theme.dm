@@ -1340,7 +1340,7 @@
 		to make use of, regardless of what their roles may be. Although primarily used by combat units such as security personnel, non-militant \
 		departments such as Engineering and Medical have still managed to get use out of this design, albeit with some modifications. \
 		<BR><BR>A label on the inside of the suit's panel reads as follows: 'Manufactured by the Phoenix Collective Department of \
-		Industry. Property of the Collective. For usage by Imperial personnel only. Unauthorized usage is punishable by law.'"
+		Industry. Property of the Collective. For use by Imperial personnel only. Unauthorized usage is punishable by law.'"
 	default_skin = "phoenix"
 	armor_type = /datum/armor/mod_theme_phoenix
 	resistance_flags = LAVA_PROOF|FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
@@ -1351,7 +1351,7 @@
 	slowdown_deployed = 0
 	ui_theme = "ntos_terminal"
 	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/hearing_protection,
-		/obj/item/mod/module/springlock/contractor/no_complexity, /obj/item/mod/module/hat_stabilizer/syndicate)
+		/obj/item/mod/module/springlock/contractor/no_complexity)
 	allowed_suit_storage = list(
 		/obj/item/restraints/handcuffs,
 		/obj/item/healthanalyzer,

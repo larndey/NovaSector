@@ -473,13 +473,14 @@
 	additional_modules = list(
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/criminalcapture,
-		/obj/item/mod/module/rad_protection,
 		/obj/item/mod/module/headprotector,
+		/obj/item/mod/module/holster,
 		/obj/item/mod/module/jetpack,
 	)
 	additional_pins = list(
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/criminalcapture,
+		/obj/item/mod/module/holster,
 	)
 
 /obj/item/mod/control/pre_equipped/phoenix/command
@@ -491,9 +492,13 @@
 		/obj/item/mod/module/rad_protection,
 		/obj/item/mod/module/headprotector,
 		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/holster,
+		/obj/item/mod/module/hat_stabilizer,
 	)
 	additional_pins = list(
 		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/criminalcapture,
+		/obj/item/mod/module/holster,
 	)
 // EXOBYTECHNOVA UPDATE END
 
