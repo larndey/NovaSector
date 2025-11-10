@@ -98,8 +98,6 @@
 	burst_shots = 3
 	ranged_cooldown = 3 SECONDS
 	r_hand = /obj/item/gun/ballistic/automatic/pulse_rifle
-	maxHealth = 110
-	health = 110
 
 /mob/living/basic/trooper/marcultist/ranged/pulsesniper // pulse sniper guy
 	casingtype = null
@@ -107,5 +105,3 @@
 	projectilesound = 'modular_nova/modules/modular_weapons/sounds/pulse_shoot.ogg'
 	ranged_cooldown = 5 SECONDS
 	r_hand = /obj/item/gun/ballistic/rifle/pulse_sniper
-	maxHealth = 95
-	health = 95
