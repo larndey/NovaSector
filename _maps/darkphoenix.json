@@ -12,16 +12,15 @@
 	"traits": [
 		{
 			"Linkage": "Cross",
-			"Baseturf": "/turf/open/openspace/airless",
-			"No Parallax": true,
+			"Gravity": false,
+			"No Parallax": false,
 			"Up": false,
 			"Down": false
 		},
 		{
 			"Linkage": "Cross",
-			"Baseturf": "/turf/open/openspace/airless",
 			"Gravity": true,
-			"No Parallax": true,
+			"No Parallax": false,
 			"Up": false,
 			"Down": false
 		}

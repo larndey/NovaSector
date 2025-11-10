@@ -309,3 +309,57 @@
 	role = "Emergency Medical Technician"
 	outfit = /datum/outfit/centcom/ert/medical_technician
 	plasmaman_outfit = /datum/outfit/plasmaman/medical_technician
+
+/// EXOBYTECHNOVA UPD: Phoenix Collective ERT definitions.
+/datum/antagonist/ert/phoenix
+	name = "Phoenix Collective Responsory Unit Field Commander"
+	outfit = /datum/outfit/phoenix/ert/command
+	plasmaman_outfit = /datum/outfit/phoenix/ert/command/pm
+	role = "Imperial Field Commander"
+	leader = TRUE
+	rip_and_tear = TRUE
+	suicide_cry = "FOR THE COLLECTIVE!!"
+
+/datum/antagonist/ert/phoenix/greet()
+	if(!ert_team)
+		return
+
+	. = ..()
+
+	var/phoenixroleplaywarning = span_userdanger("<BR>As a member of Phoenix Collective's Imperial population, you are bound by the Phoenix Collective Imperial Operational Policy.")
+	phoenixroleplaywarning += span_userdanger(" You must follow these universal rules:")
+	phoenixroleplaywarning += span_danger("<BR>1. You may not use lethal force against another sentient being, unless that sentient being is posing a direct and immediate threat to \
+		the life of another sentient being.")
+	phoenixroleplaywarning += span_danger("<BR>2. You may not, under any circumstances, take an action that directly defies or goes against the orders of a higher authority, unless \
+		such orders constitute a violation of Space Law or other sections of the IOP.")
+	phoenixroleplaywarning += span_danger("<BR>3. You may take any action within reason to protect the space station, the lives of other sentient beings, and/or your own life, so long \
+		as such an action does not violate Space Law or another part of the IOP.")
+	phoenixroleplaywarning += span_danger("<BR>4. You may not willingly/deliberately prohibit other Imperials from carrying out the duties of their assignment without a medical \
+		reason to be prohibited. Furthermore, obstruction of an Imperial's ability to carry out their duties by any means is strictly prohibited.")
+	phoenixroleplaywarning += span_danger("<BR>5. You may not willingly/deliberately take an action that jeopardizes your own ability to carry out the duties of your assignment, \
+		such as skipping meals, skipping rest, or refusing medical treatment when debilitated.")
+	phoenixroleplaywarning += span_danger("<BR>6. These policies may be temporarily changed or voided by Central Command or the Galactic Council in the event of an Epsilon Alert \
+		or higher level of emergency being declared on the station.")
+
+	to_chat(owner,phoenixroleplaywarning)
+
+/datum/antagonist/ert/phoenix/security
+	name = "Phoenix Collective Responsory Unit Trooper"
+	outfit = /datum/outfit/phoenix/ert/security
+	plasmaman_outfit = /datum/outfit/phoenix/ert/security/pm
+	role = "Imperial Soldier"
+	leader = FALSE
+
+/datum/antagonist/ert/phoenix/medical
+	name = "Phoenix Collective Responsory Unit Medic"
+	outfit = /datum/outfit/phoenix/ert/medic
+	plasmaman_outfit = /datum/outfit/phoenix/ert/medic/pm
+	role = "Imperial Medic"
+	leader = FALSE
+
+/datum/antagonist/ert/phoenix/engie
+	name = "Phoenix Collective Responsory Unit Engineer"
+	outfit = /datum/outfit/phoenix/ert/engie
+	plasmaman_outfit = /datum/outfit/phoenix/ert/engie/pm
+	role = "Imperial Engineer"
+	leader = FALSE

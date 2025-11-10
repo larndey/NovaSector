@@ -60,7 +60,7 @@
 		is entirely within the suit, distributing items and weight evenly to ensure a comfortable experience for the user; \
 		whether smuggling, or simply hauling."
 	icon_state = "storage_large"
-	max_combined_w_class = 21
+	max_combined_w_class = 30
 	max_items = 14
 
 /obj/item/mod/module/storage/syndicate
@@ -88,7 +88,7 @@
 /obj/item/mod/module/storage/belt
 	name = "MOD case storage module"
 	desc = "Some concessions had to be made when creating a compressed modular suit core. \
-		As a result, Roseus Galactic equipped their suit with a slimline storage case.  \
+		As a result, Roseus Galactic equipped their suit with a slimline storage case. \
 		If you find this equipped to a standard modular suit, then someone has almost certainly shortchanged you on a proper storage module."
 	icon_state = "storage_case"
 	complexity = 0
@@ -103,7 +103,7 @@
 		miniaturized bluespace pockets for the ultimate in storage technology; regardless of the weight of objects put inside."
 	icon_state = "storage_large"
 	max_w_class = WEIGHT_CLASS_GIGANTIC
-	max_combined_w_class = 60
+	max_combined_w_class = 90
 	max_items = 21
 	big_nesting = TRUE
 

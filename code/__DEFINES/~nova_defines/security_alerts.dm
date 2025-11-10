@@ -6,12 +6,12 @@
 #define SEC_LEVEL_VIOLET 2
 #define SEC_LEVEL_ORANGE 3
 #define SEC_LEVEL_AMBER 4
-#define SEC_LEVEL_RED 5
 
-// Nova doomsday scenarios
+// Nova emergency scenarios
+#define SEC_LEVEL_RED 5
 #define SEC_LEVEL_DELTA 6
 
-// Exonova doomsday scenarios
+// Exonova emergency scenarios
 #define SEC_LEVEL_BLACK 7
 
 // Intervention scenarios

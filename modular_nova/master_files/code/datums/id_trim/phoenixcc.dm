@@ -1,17 +1,37 @@
 /datum/id_trim/phoenixcollective
 	trim_icon = 'modular_nova/master_files/icons/obj/card.dmi'
-	assignment = "Phoenix Collective"
+	assignment = "Phoenix Collective Imperial"
 	trim_state = "trim_phoenix"
-	department_color = COLOR_SECURITY_RED
-	subdepartment_color = LIGHT_COLOR_INTENSE_RED
-	sechud_icon_state = SECHUD_SOLFED
-	threat_modifier = -5 // Yes, Phoenix doesn't count as police force, but neither does SolFed in the Exobytech universe. --Niko
+	department_color = COLOR_WHITE
+	subdepartment_color = COLOR_RED_GRAY
+	sechud_icon_state = SECHUD_ASSISTANT
 
 /// Lets be real if the ERT variant of these guys are coming, ya'll are (beyond) cooked
 /datum/id_trim/phoenixcollective/ert
-	assignment = "Phoenix Collective Martial"
+	assignment = "PCI-DMO Responsory Agent"
+	department_color = LIGHT_COLOR_INTENSE_RED
 	threat_modifier = -10 // This counts as military intervention
 	sechud_icon_state = SECHUD_DEATH_COMMANDO
+
+/datum/id_trim/phoenixcollective/ert/cmdr
+	assignment = "PCI-DMO Responsory Command"
+	subdepartment_color = COLOR_COMMAND_BLUE
+	sechud_icon_state = SECHUD_EMERGENCY_RESPONSE_TEAM_COMMANDER
+
+/datum/id_trim/phoenixcollective/ert/sec
+	assignment = "PCI-DMO Responsory Trooper"
+	subdepartment_color = COLOR_SECURITY_RED
+	sechud_icon_state = SECHUD_SECURITY_RESPONSE_OFFICER
+
+/datum/id_trim/phoenixcollective/ert/med
+	assignment = "PCI-DMO Responsory Medic"
+	subdepartment_color = COLOR_MEDICAL_BLUE
+	sechud_icon_state = SECHUD_MEDICAL_RESPONSE_OFFICER
+
+/datum/id_trim/phoenixcollective/ert/eng
+	assignment = "PCI-DMO Responsory Engineer"
+	subdepartment_color = COLOR_ENGINEERING_ORANGE
+	sechud_icon_state = SECHUD_ENGINEERING_RESPONSE_OFFICER
 
 /datum/id_trim/phoenixcollective/ert/New()
 	. = ..()
@@ -19,9 +39,16 @@
 
 /// Not a soft ERT variant, this is CentCom lol
 /datum/id_trim/phoenixcollective/official
-	assignment = "Phoenix Collective CentCom"
+	assignment = "Phoenix Collective Central Command"
 	sechud_icon_state = SECHUD_SOLFED_LIASON
-	threat_modifier = -10 // CentCom are 'legally' allowed to do whatever the fuck they want. Allegedly
+	department_color = COLOR_PRISONER_ORANGE
+	subdepartment_color = COLOR_ORANGE
+	threat_modifier = -10 // CentCom are 'legally' allowed to do whatever the fuck they want. Allegedly.
+
+/// Alternate variant for PC Sector Operations
+/datum/id_trim/phoenixcollective/official/secops
+	assignment = "Phoenix Collective Sector Operations"
+	subdepartment_color = LIGHT_COLOR_FLARE
 
 /datum/id_trim/phoenixcollective/official/New()
 	. = ..()
