@@ -410,23 +410,32 @@
 	name = "Dead Cyber Police"
 	outfit = /datum/outfit/cyber_police
 
-/// EXOBYTECH UPD: Marele cultist outfits
+/// EXOBYTECH UPD: Marele cultist outfits and spawner defines
 /obj/effect/mob_spawn/corpse/human/marcultist
 	name = "Heretic Peacekeeper"
 	hairstyle = "Bald"
 	facial_hairstyle = "Shaved"
-	outfit = /datum/outfit/marcultist/basic
+	outfit = /datum/outfit/marcultist
 
-/datum/outfit/marcultist/basic
+/datum/outfit/marcultist
 	name = "Heretic Peacekeeper Corpse"
 	uniform = /obj/item/clothing/under/occult
 	suit = /obj/item/clothing/suit/hooded/cultrobes/eldritch
 	shoes = /obj/item/clothing/shoes/combat/coldres
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
-	ears = /obj/item/radio/headset/guild
-	mask = /obj/item/clothing/mask/gas/sechailer
 	neck = /obj/item/clothing/neck/eldritch_amulet
 	head = /obj/item/clothing/head/hooded/occult
-	back = /obj/item/storage/backpack/duffelbag/syndie/sabotage
 	id = /obj/item/card/id/advanced/chameleon
 	id_trim = /datum/id_trim/chameleon/operative
+
+/obj/effect/mob_spawn/corpse/human/marcultist
+	name = "Heretic Peacekeeper Elite"
+	hairstyle = "Bald"
+	facial_hairstyle = "Shaved"
+	outfit = /datum/outfit/marcultist
+
+/datum/outfit/marcultist/elite
+	name = "Heretic Peacekeeper Elite Corpse"
+	back = /obj/item/storage/backpack/duffelbag/syndie/interdyne
+	id = /obj/item/card/id/advanced/chameleon/elite
+	id_trim = /datum/id_trim/chameleon/operative/nuke_leader
