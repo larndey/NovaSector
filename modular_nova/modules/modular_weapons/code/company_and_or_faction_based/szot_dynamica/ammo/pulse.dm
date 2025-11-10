@@ -62,6 +62,11 @@
 	var/initial_brute = 10
 	var/initial_burn = 20
 
+	// EXOBYTECHNOVA CHANGE: Get the actual initial damages from the projectile, if possible
+	if(loaded_projectile && istype(loaded_projectile, /obj/projectile/beam/laser/plasma_glob/pulse))
+		initial_brute = loaded_projectile.pulse_brute_damage
+		initial_burn = loaded_projectile.damage
+
 	// Get damage multiplier if in a gun
 	var/proj_damage_mult = 1
 	if(isammobox(loc))
@@ -120,7 +125,7 @@
 
 /obj/item/ammo_casing/pulse/extended
 	name = "extended pulse energy cell"
-	desc = "A reusable energy cell for pulse weapons. This one has an upgraded and extended power capacity."
+	desc = "A reusable energy cell for pulse weapons. This one has an upgraded and extended power capacity, but shots lack some impact potential."
 	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*0.4, /datum/material/plasma = SHEET_MATERIAL_AMOUNT*2.5, /datum/material/gold = SHEET_MATERIAL_AMOUNT*0.9)
 	projectile_type = /obj/projectile/beam/laser/plasma_glob/pulse/phoenix
 	///Maximum amount of times this casing can be used.
