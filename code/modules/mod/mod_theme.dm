@@ -1353,7 +1353,6 @@
 	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/hearing_protection,
 		/obj/item/mod/module/springlock/contractor/no_complexity)
 	allowed_suit_storage = list(
-		/obj/item/tank/internals,
 		/obj/item/flashlight,
 		/obj/item/restraints/handcuffs,
 		/obj/item/healthanalyzer,
