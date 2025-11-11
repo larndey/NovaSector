@@ -62,11 +62,6 @@
 	var/initial_brute = 10
 	var/initial_burn = 20
 
-	// EXOBYTECHNOVA CHANGE: Get the actual initial damages from the projectile, if possible
-	if(loaded_projectile && istype(loaded_projectile, /obj/projectile/beam/laser/plasma_glob/pulse))
-		initial_brute = loaded_projectile.pulse_brute_damage
-		initial_burn = loaded_projectile.damage
-
 	// Get damage multiplier if in a gun
 	var/proj_damage_mult = 1
 	if(isammobox(loc))
