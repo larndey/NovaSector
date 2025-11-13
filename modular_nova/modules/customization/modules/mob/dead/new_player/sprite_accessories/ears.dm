@@ -31,7 +31,7 @@
 	icon_state = "none"
 
 /datum/sprite_accessory/ears/cat
-	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_FELINE, SPECIES_HUMANOID, SPECIES_GHOUL)
+	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_PCSYNTH, SPECIES_FELINE, SPECIES_HUMANOID, SPECIES_GHOUL)
 	relevent_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
 	color_src = USE_ONE_COLOR
 	has_inner = TRUE
@@ -44,7 +44,7 @@
 	icon = 'modular_nova/master_files/icons/mob/sprite_accessory/ears.dmi'
 	organ_type = /obj/item/organ/ears_external
 	color_src = USE_MATRIXED_COLORS
-	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_FELINE, SPECIES_HUMANOID, SPECIES_GHOUL)
+	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_PCSYNTH, SPECIES_FELINE, SPECIES_HUMANOID, SPECIES_GHOUL)
 	uses_emissives = TRUE
 
 /datum/sprite_accessory/ears/external/none
@@ -57,13 +57,13 @@
 	icon = 'modular_nova/master_files/icons/mob/sprite_accessory/ears_big.dmi'
 
 /datum/sprite_accessory/ears/external/vulpkanin
-	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_FELINE, SPECIES_VULP, SPECIES_HUMANOID, SPECIES_GHOUL)
+	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_PCSYNTH, SPECIES_FELINE, SPECIES_VULP, SPECIES_HUMANOID, SPECIES_GHOUL)
 
 /datum/sprite_accessory/ears/external/cat
-	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_FELINE, SPECIES_TAJARAN, SPECIES_HUMANOID, SPECIES_GHOUL)
+	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_PCSYNTH, SPECIES_FELINE, SPECIES_TAJARAN, SPECIES_HUMANOID, SPECIES_GHOUL)
 
 /datum/sprite_accessory/ears/external/akula
-	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_FELINE, SPECIES_AQUATIC, SPECIES_AKULA, SPECIES_HUMANOID, SPECIES_GHOUL)
+	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_PCSYNTH, SPECIES_FELINE, SPECIES_AQUATIC, SPECIES_AKULA, SPECIES_HUMANOID, SPECIES_GHOUL)
 
 /datum/sprite_accessory/ears/external/axolotl
 	name = "Axolotl"

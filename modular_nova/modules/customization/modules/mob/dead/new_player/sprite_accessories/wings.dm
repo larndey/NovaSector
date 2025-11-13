@@ -10,7 +10,7 @@
 	generic = "Wings"
 	key = "wings"
 	color_src = USE_ONE_COLOR
-	recommended_species = list(SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_FELINE, SPECIES_LIZARD, SPECIES_MAMMAL)
+	recommended_species = list(SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_PCSYNTH, SPECIES_FELINE, SPECIES_LIZARD, SPECIES_MAMMAL)
 	organ_type = /obj/item/organ/wings
 	relevent_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER, BODY_ADJ_LAYER)
 	genetic = TRUE
