@@ -412,7 +412,6 @@ ROUNDSTART_RACES slimeperson
 ROUNDSTART_RACES podweak
 ROUNDSTART_RACES dwarf
 ROUNDSTART_RACES synth
-#ROUNDSTART_RACES pcbiosynth # DO NOT UNCOMMENT, THIS RACE IS IN EXTREME BETA TESTING PHASE
 ROUNDSTART_RACES vox
 ROUNDSTART_RACES aquatic
 ROUNDSTART_RACES insect
@@ -423,6 +422,9 @@ ROUNDSTART_RACES hemophage
 ROUNDSTART_RACES vox_primalis
 ROUNDSTART_RACES abductorweak
 ROUNDSTART_RACES kobold
+
+## DO NOT UNCOMMENT, THIS RACE IS IN EXTREME BETA TESTING PHASE
+#ROUNDSTART_RACES pcbiosynth
 
 ##-------------------------------------------------------------------------------------------
 
