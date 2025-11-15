@@ -5,10 +5,10 @@
 	inherent_traits = list(
 		TRAIT_CAN_STRIP,
 		TRAIT_ADVANCEDTOOLUSER,
-		TRAIT_RADIMMUNE,
+		//TRAIT_RADIMMUNE, // EXOBYTECHNOVA UPDATE: Unfortunately, being in the gray area between man and machine has downsides.
 		TRAIT_NOBREATH,
 		//TRAIT_TOXIMMUNE, // EXOBYTECHNOVA UPDATE: Unfortunately, being in the gray area between man and machine has downsides.
-		TRAIT_GENELESS,
+		//TRAIT_GENELESS, // EXOBYTECHNOVA UPDATE: Unfortunately, being in the gray area between man and machine has downsides.
 		TRAIT_STABLEHEART,
 		TRAIT_LIMBATTACHMENT,
 		TRAIT_NO_HUSK,
@@ -21,7 +21,6 @@
 	)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | SLIME_EXTRACT
 	exotic_bloodtype = /datum/blood_type/haemocyanin // EXOBYTECHNOVA UPDATE: Detroit become human moment
-	digitigrade_customization = DIGITIGRADE_OPTIONAL
 	coldmod = 0.1
 	heatmod = 1.8
 
@@ -41,13 +40,13 @@
 /datum/species/synthetic/phoenix/create_pref_unique_perks()
 	var/list/perk_descriptions = list()
 
-	perk_descriptions += list(list( //tryin to keep traits minimal since synths will get a lot of traits when my upstream traits pr is merged
+	perk_descriptions += list(list( //tryin to keep traits minimal since synths will get a lot of traits when my upstream traits pr is merged (EXONOVA UPD: shut the fuck up)
 		SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 		SPECIES_PERK_ICON = "robot",
-		SPECIES_PERK_NAME = "Synthetic Benefits",
-		SPECIES_PERK_DESC = "Unlike organics, you DON'T explode when faced with a vacuum! Additionally, your chassis is built with such strength as to \
-		grant you immunity to OVERpressure! Just make sure extreme heat doesn't fry your circuitry. While you are stronger against cold than other synthetics, \
-		you unfortunately possess other weaknesses."
+		SPECIES_PERK_NAME = "Biosynthetic Benefits",
+		SPECIES_PERK_DESC = "Unlike most other organics, you DON'T explode when faced with a vacuum! Additionally, your chassis is built with such strength as to \
+		grant you immunity to OVERpressure! Just make sure extreme heat doesn't fry your circuitry. While you are stronger against cold than other synths, you do \
+		possess other weaknesses."
 	))
 
 	perk_descriptions += list(list(
@@ -84,8 +83,16 @@
 		SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
 		SPECIES_PERK_ICON = "robot",
 		SPECIES_PERK_NAME = "Biological Vulnerabilities",
-		SPECIES_PERK_DESC = "Unfortunately, Biosynths are more vulnerable than other Synthetic Humanoids when faced with critical damage, and can fall to the ground \
-		in pain like most other organics. Biosynths also lack immunity to toxins, but thankfully remain immune to hazardous radiation, in part due to lacking genes."
+		SPECIES_PERK_DESC = "Unfortunately, [plural_form] are more vulnerable than other synths when faced with critical damage. They still fall to the ground \
+		like most other organics."
+	))
+
+	perk_descriptions += list(list(
+		SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
+		SPECIES_PERK_ICON = "robot",
+		SPECIES_PERK_NAME = "Synthetic Genes",
+		SPECIES_PERK_DESC = "Being in the gray area between man and machine, [plural_form] possess organic genetics, making them vulnerable to toxins, radiation, \
+		and genetic scrambling. Other synths remain immune to such inconveniences. Better bring a hazard suit."
 	))
 
 	return perk_descriptions
