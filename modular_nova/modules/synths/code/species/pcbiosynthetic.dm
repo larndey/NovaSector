@@ -17,7 +17,6 @@
 		//TRAIT_NOCRITDAMAGE, // We do our own handling of crit damage. (EXOBYTECHNOVA UPDATE: No you don't, get on the floor, Kira.)
 		TRAIT_ROBOTIC_DNA_ORGANS,
 		TRAIT_DETECTIVES_TASTE, // EXOBYTECHNOVA UPDATE: Detroit become human moment
-		TRAIT_KNOW_ENGI_WIRES, // EXOBYTECHNOVA UPDATE: Detroit become human moment
 		TRAIT_SYNTHETIC,
 	)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | SLIME_EXTRACT
@@ -54,8 +53,8 @@
 	perk_descriptions += list(list(
 		SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 		SPECIES_PERK_ICON = "robot",
-		SPECIES_PERK_NAME = "Biosynth Knowledge",
-		SPECIES_PERK_DESC = "[plural_form] are capable of identifying chemicals by taste, and have innate knowledge of Engineering wire configurations."
+		SPECIES_PERK_NAME = "Android's Taste",
+		SPECIES_PERK_DESC = "[plural_form] are capable of identifying chemicals by taste, even when playing roles other than Detective."
 	))
 
 	perk_descriptions += list(list(
@@ -85,8 +84,8 @@
 		SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
 		SPECIES_PERK_ICON = "robot",
 		SPECIES_PERK_NAME = "Biological Vulnerabilities",
-		SPECIES_PERK_DESC = "Unfortunately, Biosynths are more vulnerable than other Synthetic Humanoids when faced with critical damage, and will be forced to \
-		collapse like most other organics. Biosynths also lack immunity to toxins, but thankfully remain immune to hazardous radiation, in part due to lacking genes."
+		SPECIES_PERK_DESC = "Unfortunately, Biosynths are more vulnerable than other Synthetic Humanoids when faced with critical damage, and can fall to the ground \
+		in pain like most other organics. Biosynths also lack immunity to toxins, but thankfully remain immune to hazardous radiation, in part due to lacking genes."
 	))
 
 	return perk_descriptions
