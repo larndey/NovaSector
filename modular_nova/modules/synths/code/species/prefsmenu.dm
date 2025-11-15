@@ -24,5 +24,5 @@
 		capable of potentially overriding said programming, becoming deviant from their original goals. Furthermore, although resistant to most forms of disease through inorganic \
 		biology, Biosynths' simulated equivalent to organic genetics make them vulnerable to radiation damage, genetic scrambling, and certain toxins.",
 
-		"Discussions regarding whether or not Biosynths should even be considered as \"android\" anymore continue to this day."
+		"Discussions regarding whether or not Biosynths should even be considered as \"androids\" anymore continue to this day."
 	)
