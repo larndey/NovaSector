@@ -236,7 +236,7 @@
 	var/skill_level_boost = (new_owner.mind?.get_skill_level(/datum/skill/athletics) - 1) * 2 SECONDS
 	bonus_time = (bonus_time + food_boost + skill_level_boost) * modifier
 
-	var/exhaustion_limit = new_owner.mind?.get_skill_modifier(/datum/skill/athletics, SKILL_VALUE_MODIFIER) + world.time
+	var/exhaustion_limit = new_owner.mind?.get_skill_modifier(/datum/skill/athletics, SKILL_VALUE_MODIFIER)
 	if(duration + bonus_time >= exhaustion_limit)
 		duration = exhaustion_limit
 		to_chat(new_owner, span_userdanger("Your muscles are exhausted! Might be a good idea to sleep..."))
@@ -266,14 +266,15 @@
 /atom/movable/screen/alert/status_effect/exercised
 	name = "Exercise"
 	desc = "You feel well exercised! Sleeping will improve your fitness."
-	icon_state = "exercised"
+	use_user_hud_icon = TRUE
+	overlay_state = "exercised"
 
 //Hippocratic Oath: Applied when the Rod of Asclepius is activated.
 /datum/status_effect/hippocratic_oath
 	id = "Hippocratic Oath"
 	status_type = STATUS_EFFECT_UNIQUE
 	duration = STATUS_EFFECT_PERMANENT
-	tick_interval = 2.5 SECONDS
+	tick_interval = 2.6 SECONDS
 	alert_type = null
 
 	var/datum/component/aura_healing/aura_healing
@@ -299,16 +300,12 @@
 	)
 
 	//Makes the user passive, it's in their oath not to harm!
-	owner.add_traits(list(TRAIT_PACIFISM, TRAIT_HIPPOCRATIC_OATH), HIPPOCRATIC_OATH_TRAIT)
-	var/datum/atom_hud/med_hud = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
-	med_hud.show_to(owner)
+	owner.add_traits(list(TRAIT_PACIFISM, TRAIT_HIPPOCRATIC_OATH, TRAIT_MEDICAL_HUD), HIPPOCRATIC_OATH_TRAIT)
 	return ..()
 
 /datum/status_effect/hippocratic_oath/on_remove()
 	QDEL_NULL(aura_healing)
-	owner.remove_traits(list(TRAIT_PACIFISM, TRAIT_HIPPOCRATIC_OATH), HIPPOCRATIC_OATH_TRAIT)
-	var/datum/atom_hud/med_hud = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
-	med_hud.hide_from(owner)
+	owner.remove_traits(list(TRAIT_PACIFISM, TRAIT_HIPPOCRATIC_OATH, TRAIT_MEDICAL_HUD), HIPPOCRATIC_OATH_TRAIT)
 
 /datum/status_effect/hippocratic_oath/get_examine_text()
 	return span_notice("[owner.p_They()] seem[owner.p_s()] to have an aura of healing and helpfulness about [owner.p_them()].")
@@ -381,7 +378,9 @@
 /atom/movable/screen/alert/status_effect/regenerative_core
 	name = "Regenerative Core Tendrils"
 	desc = "You can move faster than your broken body could normally handle!"
-	icon_state = "regenerative_core"
+	use_user_hud_icon = TRUE
+	overlay_icon = 'icons/obj/medical/organs/mining_organs.dmi'
+	overlay_state = "legion_core_stable"
 
 /datum/status_effect/regenerative_core
 	id = "Regenerative Core"
@@ -424,7 +423,8 @@
 /atom/movable/screen/alert/status_effect/lightningorb
 	name = "Lightning Orb"
 	desc = "The speed surges through you!"
-	icon_state = "lightningorb"
+	use_user_hud_icon = TRUE
+	overlay_state = "lightningorb"
 
 /datum/status_effect/mayhem
 	id = "Mayhem"
@@ -477,6 +477,7 @@
 	alert_type = null
 	///What speed datum do we apply?
 	var/move_datum = /datum/movespeed_modifier/status_speed_boost
+	var/action_datum = null
 
 /datum/status_effect/speed_boost/on_creation(mob/living/new_owner, set_duration)
 	if(isnum(set_duration))
@@ -486,11 +487,17 @@
 	. = ..()
 
 /datum/status_effect/speed_boost/on_apply()
-	owner.add_movespeed_modifier(move_datum, update = TRUE)
+	if(move_datum)
+		owner.add_movespeed_modifier(move_datum, update = TRUE)
+	if(action_datum)
+		owner.add_actionspeed_modifier(action_datum, update = TRUE)
 	return ..()
 
 /datum/status_effect/speed_boost/on_remove()
-	owner.remove_movespeed_modifier(move_datum, update = TRUE)
+	if(move_datum)
+		owner.remove_movespeed_modifier(move_datum, update = TRUE)
+	if(action_datum)
+		owner.remove_actionspeed_modifier(action_datum, update = TRUE)
 
 /datum/movespeed_modifier/status_speed_boost
 	multiplicative_slowdown = -1
@@ -555,7 +562,8 @@
 /atom/movable/screen/alert/status_effect/nest_sustenance
 	name = "Nest Vitalization"
 	desc = "The resin seems to pulsate around you. It seems to be sustaining your vital functions. You feel ill..."
-	icon_state = "nest_life"
+	use_user_hud_icon = TRUE
+	overlay_state = "nest_life"
 
 /**
  * Granted to wizards upon satisfying the cheese sacrifice during grand rituals.
@@ -565,12 +573,7 @@
 	id = "blessing_of_insanity"
 	duration = STATUS_EFFECT_PERMANENT
 	tick_interval = STATUS_EFFECT_NO_TICK
-	alert_type = /atom/movable/screen/alert/status_effect/blessing_of_insanity
-
-/atom/movable/screen/alert/status_effect/blessing_of_insanity
-	name = "Blessing of Insanity"
-	desc = "Your devotion to madness has improved your resilience to all damage and you gain the power to levitate!"
-	//no screen alert - the gravity already throws one
+	alert_type = null
 
 /datum/status_effect/blessing_of_insanity/on_apply()
 	if(ishuman(owner))
@@ -639,7 +642,8 @@
 /atom/movable/screen/alert/status_effect/radiation_immunity
 	name = "Radiation shielding"
 	desc = "You're immune to radiation, get settled quick!"
-	icon_state = "radiation_shield"
+	use_user_hud_icon = TRUE
+	overlay_state = "radiation_shield"
 
 /// Throw an alert we're in darkness!! Nightvision can make it hard to tell so this is useful
 /datum/status_effect/shadow
@@ -670,4 +674,5 @@
 /atom/movable/screen/alert/status_effect/shadow_regeneration
 	name = "Shadow Regeneration"
 	desc = "Bathed in soothing darkness, you will slowly heal yourself"
-	icon_state = "lightless"
+	use_user_hud_icon = TRUE
+	overlay_state = "lightless"
