@@ -1028,7 +1028,9 @@ em {
 }
 
 .drone {
-  color: hsl(60, 0.8%, 51.4%);
+  color: hsl(60, 100%, 50%);
+  background-color: hsl(287 62% 36%);
+  font-style: italic;
 }
 
 .monkey {
@@ -1430,6 +1432,12 @@ $border-width-px: $border-width * 1px;
 }
 .rlooc {
   color: #b09448;
+}
+.subtle {
+  color: #abc6ec;
+}
+.subtler {
+  color: #e2c1ff;
 }
 
 .userlove {

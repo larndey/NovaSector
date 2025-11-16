@@ -50,7 +50,7 @@ Exclude = AUTOADMIN
 Edit =
 
 Name = Trial Admin
-Include = @ FUN SERVER 
+Include = @ SPAWN VAREDIT BAN
 Exclude = AUTOADMIN
 Edit =
 
