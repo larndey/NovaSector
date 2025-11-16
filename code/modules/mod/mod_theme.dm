@@ -469,7 +469,7 @@
 	resistance_flags = FIRE_PROOF|LAVA_PROOF
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	complexity_max = DEFAULT_MAX_COMPLEXITY - 2
+	complexity_max = DEFAULT_MAX_COMPLEXITY
 	charge_drain = DEFAULT_CHARGE_DRAIN * 2
 	inbuilt_modules = list(/obj/item/mod/module/ash_accretion, /obj/item/mod/module/sphere_transform)
 	variants = list(
@@ -1274,7 +1274,7 @@
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 4
+	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	siemens_coefficient = 0
 	slowdown_deployed = 0
 	ui_theme = "syndicate"
@@ -1335,27 +1335,27 @@
 // EXOBYTECHNOVA UPD: Phoenix Collective MOD suit themes, based off the elite modsuit
 /datum/mod_theme/phoenix
 	name = "phoenix"
-	desc = "An elite MOD suit modified and improved by the Phoenix Collective to serve a wide variety of purposes. \
+	desc = "An elite MOD suit modified and improved by the Phoenix Collective to serve a wider variety of purposes. \
 		Those who wear this do not fly with children of the dust."
-	extended_desc = "A retrofitting of the Syndicate elite suit, this MOD suit is meant as a high-tier general purpose \
-		option, and has been mass produced for the members of Phoenix Collective's imperial populations. While the \
-		design is primarily used by combatives such as security personnel, non-combat departments such as engineering \
-		have still managed to get use out of it with some modifications.. A label on the inside of the suit's panel \
-		reads as follows: 'Manufactured by the Phoenix Collective Department of Industry. Property of the Collective. \
-		For usage by Imperial personnel only. Unauthorized usage is punishable by law.'"
+	extended_desc = "A retrofitting of the Syndicate elite suit, the Imperial Mk. IV model is meant as a general purpose MOD suit designed for \
+		application to a wide variety of possible roles. The design has been mass produced for the Phoenix Collective's imperial population \
+		to make use of, regardless of what their roles may be. Although primarily used by combat units such as security personnel, non-militant \
+		departments such as Engineering and Medical have still managed to get use out of this design, albeit with some modifications. \
+		<BR><BR>A label on the inside of the suit's panel reads as follows: 'Manufactured by the Phoenix Collective Department of \
+		Industry. Property of the Collective. For use by Imperial personnel only. Unauthorized usage is punishable by law.'"
 	default_skin = "phoenix"
 	armor_type = /datum/armor/mod_theme_phoenix
-	resistance_flags = FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
+	resistance_flags = LAVA_PROOF|FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	complexity_max = DEFAULT_MAX_COMPLEXITY + 10
 	siemens_coefficient = 0
 	slowdown_deployed = 0
 	ui_theme = "ntos_terminal"
-	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/night,
-		/obj/item/mod/module/hearing_protection, /obj/item/mod/module/springlock/contractor/no_complexity,
-		/obj/item/mod/module/hat_stabilizer/syndicate)
+	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/hearing_protection,
+		/obj/item/mod/module/springlock/contractor/no_complexity)
 	allowed_suit_storage = list(
+		/obj/item/flashlight,
 		/obj/item/restraints/handcuffs,
 		/obj/item/healthanalyzer,
 		/obj/item/assembly/flash,
@@ -1366,16 +1366,18 @@
 		/obj/item/reagent_containers/hypospray,
 		/obj/item/reagent_containers/applicator/pill,
 		/obj/item/reagent_containers/syringe,
-		/obj/item/gun,
 		/obj/item/melee/baton,
-		/obj/item/melee/energy/sword,
+		/obj/item/knife/combat,
+		/obj/item/gun,
 		/obj/item/shield/energy,
+		/obj/item/shield/riot,
+		/obj/item/storage/medkit,
 	)
 	variants = list(
 		"phoenix" = list(
 			/obj/item/clothing/head/mod = list(
 				UNSEALED_CLOTHING = SNUG_FIT,
-				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|BLOCK_GAS_SMOKE_EFFECT|HEADINTERNALS,
+				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|BLOCK_GAS_SMOKE_EFFECT|HEADINTERNALS|LAVAPROTECT,
 				UNSEALED_INVISIBILITY = HIDEFACIALHAIR,
 				SEALED_INVISIBILITY = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDESNOUT,
 				SEALED_COVER = HEADCOVERSMOUTH|HEADCOVERSEYES|PEPPERPROOF,
@@ -1384,17 +1386,17 @@
 			),
 			/obj/item/clothing/suit/mod = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
-				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
+				SEALED_CLOTHING = STOPSPRESSUREDAMAGE|LAVAPROTECT,
 				SEALED_INVISIBILITY = HIDEJUMPSUIT,
 				UNSEALED_MESSAGE = CHESTPLATE_UNSEAL_MESSAGE,
-				SEALED_MESSAGE = CHESTPLATE_SEAL_MESSAGE,
+				SEALED_MESSAGE = PHOENIX_CHESTPLATE_SEAL_MESSAGE,
 			),
 			/obj/item/clothing/gloves/mod = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
 				CAN_OVERSLOT = TRUE,
-				UNSEALED_MESSAGE = GAUNTLET_UNSEAL_MESSAGE,
-				SEALED_MESSAGE = GAUNTLET_SEAL_MESSAGE,
+				UNSEALED_MESSAGE = PHOENIX_GAUNTLET_UNSEAL_MESSAGE,
+				SEALED_MESSAGE = PHOENIX_GAUNTLET_SEAL_MESSAGE,
 			),
 			/obj/item/clothing/shoes/mod = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -1407,10 +1409,10 @@
 	)
 
 /datum/armor/mod_theme_phoenix
-	melee = 70
-	bullet = 65
-	laser = 70
-	energy = 60
+	melee = 50
+	bullet = 50
+	laser = 80
+	energy = 75
 	bomb = 50
 	bio = 100
 	fire = 100
@@ -2114,7 +2116,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	complexity_max = DEFAULT_MAX_COMPLEXITY - 10
 	slowdown_deployed = 0
-	inbuilt_modules = list(/obj/item/mod/module/hearing_protection)
+	inbuilt_modules = list(/obj/item/mod/module/hearing_protection/elite)
 	allowed_suit_storage = list(
 		/obj/item/restraints/handcuffs,
 	)

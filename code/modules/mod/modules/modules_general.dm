@@ -60,7 +60,7 @@
 		is entirely within the suit, distributing items and weight evenly to ensure a comfortable experience for the user; \
 		whether smuggling, or simply hauling."
 	icon_state = "storage_large"
-	max_combined_w_class = 21
+	max_combined_w_class = 30
 	max_items = 14
 
 /obj/item/mod/module/storage/syndicate
@@ -72,10 +72,23 @@
 	max_combined_w_class = 30
 	max_items = 21
 
+/// EXOBYTECHNOVA UPD: Phoenix Collective version of the Bluespace storage
+/obj/item/mod/module/storage/phoenix
+	name = "MOD phoenix storage module"
+	desc = "Following the destruction of the Hyperverse Gate, the Phoenix Collective could no longer sustainably mount Bluespace storage technology within \
+		every single MOD control unit they manufactured. This alternative model is based off - you guessed it - modified Syndicate tech, making use of \
+		cheaper, but still effective, esoteric technologies to maintain the effectiveness of their storage. While unable to hold as much as a Bluespace-based \
+		storage module, it is still an effective alternative with decent storage capacity."
+	icon_state = "storage_large"
+	max_w_class = WEIGHT_CLASS_BULKY
+	max_combined_w_class = 60
+	max_items = 14
+	big_nesting = TRUE
+
 /obj/item/mod/module/storage/belt
 	name = "MOD case storage module"
 	desc = "Some concessions had to be made when creating a compressed modular suit core. \
-		As a result, Roseus Galactic equipped their suit with a slimline storage case.  \
+		As a result, Roseus Galactic equipped their suit with a slimline storage case. \
 		If you find this equipped to a standard modular suit, then someone has almost certainly shortchanged you on a proper storage module."
 	icon_state = "storage_case"
 	complexity = 0
@@ -86,11 +99,11 @@
 
 /obj/item/mod/module/storage/bluespace
 	name = "MOD bluespace storage module"
-	desc = "A storage system developed by Nanotrasen, these compartments employ \
+	desc = "A storage system developed by NanoTrasen, these compartments employ \
 		miniaturized bluespace pockets for the ultimate in storage technology; regardless of the weight of objects put inside."
 	icon_state = "storage_large"
 	max_w_class = WEIGHT_CLASS_GIGANTIC
-	max_combined_w_class = 60
+	max_combined_w_class = 90
 	max_items = 21
 	big_nesting = TRUE
 

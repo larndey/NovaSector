@@ -93,6 +93,6 @@ map snowglobe
 endmap
 
 ## EXONOVA MAPS ##
+
 map darkphoenix
-	disabled
 endmap
