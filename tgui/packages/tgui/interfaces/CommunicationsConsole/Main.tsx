@@ -227,11 +227,11 @@ export function PageMain(props) {
           {!!canMessageAssociates && (
             <Button
               icon="bullhorn"
-              color="gold"
+              color="purple"
               disabled={!importantActionReady}
               onClick={() => act('messagethefeds')}
             >
-              Send message to the Galactic Council Regional Command
+              Send message to the Exobytech Regional Command
             </Button>
           )}
           {!!canMakeAnnouncement && (
