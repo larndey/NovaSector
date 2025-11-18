@@ -1,5 +1,3 @@
-[This repo is currently non-functional until TGStation/NovaSector updates their lists to be associative.](https://github.com/NovaSector/NovaSector/issues/6377)
-
 ## Nova Sector (/tg/station Downstream) - "ExoNova" fork by N0tG00b3r (aka TheActualNikoOneshot)
 ## DO NOT TOUCH THIS BRANCH WITHOUT KEVIN'S APPROVAL
 
@@ -31,7 +29,39 @@
 ExoNova is a "fork of a fork" of Nova Sector and does not keep up with the main branch every time it updates.
 Changes made to ExoNova include nitpicky bug fixes, new NPCs, significantly altered lore texts, and other various changes.
 
-I would strongly suggest contributing to the original NovaSector repo instead of this one.
+## DEVELOPMENT
+
+[Modularisation Guide](./modular_nova/readme.md)
+
+## DOWNLOADING
+
+[Downloading](.github/guides/DOWNLOADING.md)
+
+[Running on the server](.github/guides/RUNNING_A_SERVER.md)
+
+[Maps and Away Missions](.github/guides/MAPS_AND_AWAY_MISSIONS.md)
+
+## Compilation
+
+Find `BUILD.bat` here in the root folder of tgstation, and double click it to initiate the build. It consists of multiple steps and might take around 1-5 minutes to compile.
+
+**The long way**. Find `bin/build.cmd` in this folder, and double click it to initiate the build. It consists of multiple steps and might take around 1-5 minutes to compile. If it closes, it means it has finished its job. You can then [setup the server](.github/guides/RUNNING_A_SERVER.md) normally by opening `tgstation.dmb` in DreamDaemon.
+
+**Building tgstation in DreamMaker directly is deprecated and might produce errors**, such as `'tgui.bundle.js': cannot find file`.
+
+**[How to compile in VSCode and other build options](tools/build/README.md).**
+
+## Getting started
+
+For contribution guidelines refer to the [Guides for Contributors](.github/CONTRIBUTING.md).
+
+For getting started (dev env, compilation) see the HackMD document [here](https://hackmd.io/@tgstation/HJ8OdjNBc#tgstation-Development-Guide).
+
+For overall design documentation see [HackMD](https://hackmd.io/@tgstation).
+
+For lore, [see Common Core](https://github.com/tgstation/common_core).
+
+I would strongly suggest contributing to the original NovaSector repo instead of this one, this is a modified repo with custom lore.
 
 ## LICENSE
 

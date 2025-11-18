@@ -36,6 +36,9 @@
 /mob/living/carbon/human/species/synth
 	race = /datum/species/synthetic
 
+/** /mob/living/carbon/human/species/synth/phoenix
+	race = /datum/species/synthetic/phoenix */
+
 /mob/living/carbon/human/species/mammal
 	race = /datum/species/mammal
 
@@ -74,6 +77,9 @@
 
 /mob/living/carbon/human/species/abductorweak
 	race = /datum/species/abductor/abductorweak
+
+/mob/living/carbon/human/species/golem/weak
+	race = /datum/species/golem/weak
 
 /mob/living/carbon/human/species/monkey/kobold
 	race = /datum/species/monkey/kobold

@@ -100,6 +100,27 @@
 #define SHEATH_SLIT	"Slit"
 #define SHEATH_MODES list(SHEATH_NONE, SHEATH_NORMAL, SHEATH_SLIT)
 
+#define FEATURE_MUTANT_COLOR_TWO "mcolor2"
+#define FEATURE_MUTANT_COLOR_THREE "mcolor3"
+#define FEATURE_MARKING_GENERIC "body_markings"
+#define FEATURE_TAIL "tail"
+#define FEATURE_TAUR "taur"
+#define FEATURE_SKIN_COLOR "skin_color"
+#define FEATURE_XENODORSAL "xenodorsal"
+#define FEATURE_XENOHEAD "xenohead"
+#define FEATURE_SKRELL_HAIR "skrell_hair"
+#define FEATURE_FLUFF "fluff"
+#define FEATURE_HEAD_ACCESSORY "head_acc"
+#define FEATURE_NECK_ACCESSORY "neck_acc"
+#define FEATURE_GHOUL_COLOR "ghoulcolor"
+#define FEATURE_WINGS_FUNCTIONAL "wings_functional"
+#define FEATURE_PENIS "penis"
+#define FEATURE_WOMB "womb"
+#define FEATURE_VAGINA "vagina"
+#define FEATURE_TESTICLES "testicles"
+#define FEATURE_BREASTS "breasts"
+#define FEATURE_ANUS "anus"
+
 #define MANDATORY_FEATURE_LIST list(\
 	"mcolor" = "#FFFFBB",\
 	"mcolor2" = "#FFFFBB",\
@@ -140,6 +161,7 @@
 #define SPECIES_MAMMAL "mammal"
 #define SPECIES_PODPERSON_WEAK "podweak"
 #define SPECIES_SYNTH "synth"
+#define SPECIES_PCSYNTH "pcbiosynth"		// EXOBYTECHNOVA EDIT: Phoenix Collective Biosynth (variant of synth humanoid)
 #define SPECIES_SLIMESTART "slimeperson"	//There's already SPECIES_SLIMEPERSON in tg
 #define SPECIES_SKRELL "skrell"
 #define SPECIES_TAJARAN "tajaran"
@@ -153,6 +175,7 @@
 #define SPECIES_HEMOPHAGE "hemophage"
 #define SPECIES_FELINE_PRIMITIVE "primitive_felinid"
 #define SPECIES_ABDUCTORWEAK "abductorweak"
+#define SPECIES_GOLEMWEAK "golemweak"
 #define SPECIES_KOBOLD "kobold"
 #define SPECIES_RAMATAE "ramatan"
 #define SPECIES_INSECTOID "insectoid"

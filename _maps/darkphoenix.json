@@ -11,11 +11,18 @@
 	},
 	"traits": [
 		{
-			"Linkage": "Cross",
+			"Linkage": null,
+			"Gravity": false,
+			"No Parallax": false,
+			"Up": true,
+			"Down": false
+		},
+		{
+			"Linkage": null,
 			"Gravity": false,
 			"No Parallax": false,
 			"Up": false,
-			"Down": false
+			"Down": true
 		},
 		{
 			"Linkage": "Cross",

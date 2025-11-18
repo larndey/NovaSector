@@ -1,9 +1,7 @@
 /datum/sprite_accessory/head_accessory
 	icon = 'modular_nova/master_files/icons/mob/sprite_accessory/head_accessory.dmi'
-	key = "head_acc"
-	generic = "Head Accessory"
+	key = FEATURE_HEAD_ACCESSORY
 	relevent_layers = list(BODY_ADJ_LAYER, BODY_FRONT_LAYER)
-	genetic = TRUE
 	organ_type = /obj/item/organ/head_accessory
 
 /datum/sprite_accessory/head_accessory/none
@@ -20,7 +18,7 @@
 /datum/sprite_accessory/head_accessory/sylveon_bow
 	name = "Sylveon Head Bow"
 	icon_state = "sylveon_bow"
-	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_FELINE, SPECIES_HUMANOID)
+	recommended_species = list(SPECIES_MAMMAL, SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_PCSYNTH, SPECIES_FELINE, SPECIES_HUMANOID)
 	relevent_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
 	color_src = USE_MATRIXED_COLORS
 	ckey_whitelist = list("whirlsam" = TRUE)
