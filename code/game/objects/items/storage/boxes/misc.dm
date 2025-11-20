@@ -99,7 +99,7 @@
 	name = "secure assets box"
 	desc = "A secure box used by members of Phoenix Collective Central Command for varied purposes."
 	icon_state = "syndiebox_large"
-	storage_type = /datum/storage/box/bandages
+	storage_type = /datum/storage/box/doubletime
 
 /obj/item/storage/box/phoenixcc/azre/PopulateContents()
 	var/static/list/items_inside = list(

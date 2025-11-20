@@ -19,3 +19,7 @@
 /datum/storage/pillbottle
 	max_slots = 21
 	max_total_storage = WEIGHT_CLASS_TINY * 21
+
+/// EXOBYTECHNOVA UPD: fuckin bandage boxes no work!!!!!!
+/datum/storage/box/doubletime
+	max_slots = 14
