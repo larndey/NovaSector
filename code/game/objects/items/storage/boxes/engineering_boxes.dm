@@ -89,6 +89,10 @@
 	icon_state = "engibox"
 	illustration = "cable_coil"
 
+/obj/item/storage/box/cables/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/stack/cable_coil/thirty(src)
+
 /obj/item/storage/box/powercells
 	name = "battery box"
 	desc = "Power cells and batteries for all your machine-powering needs."

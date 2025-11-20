@@ -160,6 +160,21 @@
 		new /obj/item/stock_parts/micro_laser(src)
 		new /obj/item/stock_parts/matter_bin(src)
 
+// EXOBYTECHNOVA UPD: Custom-set overloaded tier 4 RPED for admin outfits n shiz.
+/obj/item/storage/part_replacer/bluespace/tier4maxout
+
+/obj/item/storage/part_replacer/bluespace/tier4maxout/PopulateContents()
+	var/static/list/items_inside = list(
+		/obj/item/stock_parts/capacitor/quadratic = 50,
+		/obj/item/stock_parts/scanning_module/triphasic = 50,
+		/obj/item/stock_parts/servo/femto = 50,
+		/obj/item/stock_parts/micro_laser/quadultra = 50,
+		/obj/item/stock_parts/matter_bin/bluespace = 50,
+		/obj/item/stock_parts/power_store/battery/bluespace/empty = 50,
+		/obj/item/stock_parts/power_store/cell/bluespace/empty = 50,
+	)
+	generate_items_inside(items_inside, src)
+
 ///Cyborg variant
 /obj/item/storage/part_replacer/cyborg
 	name = "rapid part exchange device"

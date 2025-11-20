@@ -181,7 +181,6 @@
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/napad = 6,
-		/obj/item/construction/rcd/loaded/upgraded = 1,
 		/obj/item/lightreplacer/blue = 1,
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/flashlight/seclite = 1,
@@ -199,3 +198,81 @@
 	gloves = /obj/item/clothing/gloves/color/plasmaman/black
 	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
 	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
+
+/// ------------------------------------------------------------------------------------------ ///
+/// CENTRAL COMMAND AND SECTOR OPERATIONS
+/// ------------------------------------------------------------------------------------------ ///
+/datum/outfit/phoenix/centcom
+	name = "Phoenix Collective CentCom Official"
+
+	id = /obj/item/card/id/advanced/black/phoenix/official
+	suit = /obj/item/clothing/suit/armor/vest/darkcarapace
+	suit_store = null
+	uniform = /obj/item/clothing/under/rank/captain/nova/utility
+	shoes = /obj/item/clothing/shoes/laceup
+	back = /obj/item/mod/control/pre_equipped/phoenix/command
+	box = /obj/item/storage/box/survival/centcom
+	ears = /obj/item/radio/headset/phoenix/cc
+	glasses = /obj/item/clothing/glasses/hud/medsechud
+	l_pocket = /obj/item/melee/energy/sword/saber/red
+	r_pocket = null
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/clandestine/unrestricted = 1,
+		/obj/item/ammo_box/magazine/m10mm/hp = 3,
+		/obj/item/flashlight/seclite = 1,
+		/obj/item/beamout_tool = 1,
+		/obj/item/modular_computer/pda/ceti = 1,
+	)
+	l_hand = null
+	r_hand = null
+
+/datum/outfit/phoenix/centcom/cutefrisk
+	name = "Phoenix Collective CC - Azre's Loadout"
+
+	id = /obj/item/card/id/advanced/black/phoenix/official/secops
+	belt = /obj/item/storage/belt/utility/chief
+	suit = /obj/item/clothing/suit/armor/vest/darkcarapace
+	suit_store = null
+	head = null
+	uniform = /obj/item/clothing/under/rank/security/head_of_security/nova/alt
+	shoes = /obj/item/clothing/shoes/winterboots/ice_boots/eva
+	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
+	back = /obj/item/mod/control/pre_equipped/phoenix/engineer/cutefrisk
+	box = /obj/item/storage/box/survival/centcom
+	ears = /obj/item/radio/headset/phoenix/cc
+	glasses = /obj/item/clothing/glasses/hud/diagnostic/night
+	mask = /obj/item/clothing/mask/gas/sechailer
+	l_pocket = /obj/item/dualsaber/purple
+	r_pocket = /obj/item/storage/bag/sheetsnatcher/debug
+	backpack_contents = list(
+		/obj/item/storage/part_replacer/bluespace/tier4maxout = 1,
+		/obj/item/storage/toolbox/guncase/nova/opfor/phoenix/pulserifle/def/cutefrisk = 1,
+		/obj/item/storage/box/phoenixcc/azre = 1,
+		/obj/item/storage/box/cables = 1,
+		/obj/item/modular_computer/pda/heads/rd = 1,
+		/obj/item/stock_parts/power_store/cell/infinite/nif_cell = 1,
+		/obj/item/flashlight/seclite = 1,
+		/obj/item/beamout_tool = 1,
+	)
+	belt_contents = list(
+		/obj/item/weldingtool/experimental = 1,
+		/obj/item/construction/rcd/ce = 1,
+		/obj/item/crowbar/power = 1,
+		/obj/item/construction/rtd/loaded = 1,
+		/obj/item/construction/rld = 1,
+		/obj/item/pipe_dispenser/bluespace = 1,
+	)
+	l_hand = null
+	r_hand = null
+
+/datum/outfit/phoenix/centcom/cutefrisk/post_equip(mob/living/carbon/human/phoenixguy, visuals_only = FALSE)
+	if(visuals_only)
+		return
+	. = ..()
+
+	/obj/item/organ/cyberimp/arm/toolkit/toolset/engtools = new /obj/item/organ/cyberimp/arm/toolkit/toolset()
+	/obj/item/organ/cyberimp/chest/nutriment/plus/nutri = new /obj/item/organ/cyberimp/chest/nutriment/plus()
+	/obj/item/organ/cyberimp/chest/spine/spinal = new /obj/item/organ/cyberimp/chest/spine()
+	engtools.Insert(phoenixguy)
+	nutri.Insert(phoenixguy)
+	spinal.Insert(phoenixguy)
