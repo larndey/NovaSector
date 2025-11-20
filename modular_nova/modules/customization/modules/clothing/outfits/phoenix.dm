@@ -270,9 +270,9 @@
 		return
 	. = ..()
 
-	/obj/item/organ/cyberimp/arm/toolkit/toolset/engtools = new /obj/item/organ/cyberimp/arm/toolkit/toolset()
-	/obj/item/organ/cyberimp/chest/nutriment/plus/nutri = new /obj/item/organ/cyberimp/chest/nutriment/plus()
-	/obj/item/organ/cyberimp/chest/spine/spinal = new /obj/item/organ/cyberimp/chest/spine()
+	var/obj/item/organ/cyberimp/arm/toolkit/toolset/engtools = new /obj/item/organ/cyberimp/arm/toolkit/toolset()
+	var/obj/item/organ/cyberimp/chest/nutriment/plus/nutri = new /obj/item/organ/cyberimp/chest/nutriment/plus()
+	var/obj/item/organ/cyberimp/chest/spine/spinal = new /obj/item/organ/cyberimp/chest/spine()
 	engtools.Insert(phoenixguy)
 	nutri.Insert(phoenixguy)
 	spinal.Insert(phoenixguy)
