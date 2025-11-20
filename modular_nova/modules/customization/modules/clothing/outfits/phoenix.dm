@@ -261,6 +261,7 @@
 		/obj/item/construction/rtd/loaded = 1,
 		/obj/item/construction/rld = 1,
 		/obj/item/pipe_dispenser/bluespace = 1,
+		/obj/item/analyzer/ranged = 1,
 	)
 	l_hand = null
 	r_hand = null
