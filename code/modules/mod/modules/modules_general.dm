@@ -83,7 +83,6 @@
 	max_w_class = WEIGHT_CLASS_BULKY
 	max_combined_w_class = 60
 	max_items = 14
-	big_nesting = TRUE
 
 /obj/item/mod/module/storage/belt
 	name = "MOD case storage module"
