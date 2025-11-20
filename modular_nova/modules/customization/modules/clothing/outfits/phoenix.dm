@@ -205,7 +205,7 @@
 /datum/outfit/phoenix/centcom
 	name = "Phoenix Collective CentCom Official"
 
-	id = /obj/item/card/id/advanced/black/phoenix/official
+	id = /obj/item/card/id/advanced/black/phoenix/centcom/secops
 	suit = /obj/item/clothing/suit/armor/vest/darkcarapace
 	suit_store = null
 	uniform = /obj/item/clothing/under/rank/captain/nova/utility
@@ -229,7 +229,7 @@
 /datum/outfit/phoenix/centcom/cutefrisk
 	name = "Phoenix Collective CC - Azre's Loadout"
 
-	id = /obj/item/card/id/advanced/black/phoenix/official/secops
+	id = /obj/item/card/id/advanced/black/phoenix/centcom/secops
 	belt = /obj/item/storage/belt/utility/chief
 	suit = /obj/item/clothing/suit/armor/vest/darkcarapace
 	suit_store = null
