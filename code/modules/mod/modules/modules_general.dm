@@ -78,16 +78,18 @@
 	desc = "Following the destruction of the Hyperverse Gate, the Phoenix Collective could no longer sustainably mount Bluespace storage technology within \
 		every single MOD control unit they manufactured. This alternative model is based off - you guessed it - modified Syndicate tech, making use of \
 		cheaper, but still effective, esoteric technologies to maintain the effectiveness of their storage. While unable to hold as much as a Bluespace-based \
-		storage module, it is still an effective alternative with decent storage capacity."
+		storage module, it is still an effective alternative with decent storage capacity. Auto-locking clamps prevent the module's removal after installation, \
+		presumably an attempt to deter theft of Collective property."
 	icon_state = "storage_large"
 	max_w_class = WEIGHT_CLASS_BULKY
 	max_combined_w_class = 60
 	max_items = 14
 	big_nesting = TRUE
+	removable = FALSE
 
 /obj/item/mod/module/storage/phoenix/Initialize(mapload)
 	. = ..()
-	atom_storage.set_holdable(null, list(/obj/item/storage/backpack))
+	atom_storage.set_holdable(null, list(/obj/item/storage/backpack, /obj/item/mod/control))
 
 /// EXOBYTECHNOVA UPD END
 

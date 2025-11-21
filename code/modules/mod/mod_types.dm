@@ -688,10 +688,6 @@
 /obj/item/mod/control/pre_equipped/empty/elite
 	theme = /datum/mod_theme/elite
 
-// EXOBYTECHNOVA UPD: Phoenix modsuit
-/obj/item/mod/control/pre_equipped/empty/phoenix
-	theme = /datum/mod_theme/phoenix
-
 /obj/item/mod/control/pre_equipped/empty/ninja
 	theme = /datum/mod_theme/ninja
 

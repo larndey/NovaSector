@@ -289,13 +289,12 @@
 
 
 
-// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit types. Broken as fuck right now. These are admin-only for a reason, you know...
+// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit types. OP as fuck most of the time. These are admin-only for a reason, you know...
 /obj/item/mod/control/pre_equipped/phoenix
 	theme = /datum/mod_theme/phoenix
 	starting_frequency = MODLINK_FREQ_NANOTRASEN
 	applied_cell = /obj/item/stock_parts/power_store/cell/infinite/nif_cell
 	applied_modules = list(
-		/obj/item/mod/module/storage/phoenix,
 		/obj/item/mod/module/emp_shield/advanced,
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/status_readout,
@@ -313,6 +312,9 @@
 	var/additional_modules
 	/// Not copy/pasted, but still important. Additional default pins.
 	var/additional_pins
+
+/obj/item/mod/control/pre_equipped/empty/phoenix
+	theme = /datum/mod_theme/phoenix
 
 /obj/item/mod/control/pre_equipped/phoenix/Initialize(mapload, new_theme, new_skin, new_core)
 	if(insignia_type)

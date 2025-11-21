@@ -1033,7 +1033,7 @@
 	slowdown_deployed = 0
 	ui_theme = "ntos_terminal"
 	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/hearing_protection,
-		/obj/item/mod/module/springlock/contractor/no_complexity)
+		/obj/item/mod/module/springlock/contractor/no_complexity, /obj/item/mod/module/storage/phoenix)
 	allowed_suit_storage = list(
 		/obj/item/flashlight,
 		/obj/item/restraints/handcuffs,
