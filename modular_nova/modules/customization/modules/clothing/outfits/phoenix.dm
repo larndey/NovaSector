@@ -62,7 +62,6 @@
 		/obj/item/ammo_box/magazine/recharge/plasma_battery = 2,
 		/obj/item/storage/box/alienhandcuffs = 1,
 		/obj/item/storage/box/nri_flares = 1,
-		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
 		/obj/item/modular_computer/pda/ceti = 1,
 	)
@@ -126,7 +125,6 @@
 		/obj/item/ammo_box/magazine/pulse/extended = 4,
 		/obj/item/gun/energy/disabler/smg = 1,
 		/obj/item/storage/box/alienhandcuffs = 1,
-		/obj/item/storage/box/fragnades = 1,
 		/obj/item/storage/box/flashbangs = 1,
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/beamout_tool = 1,
@@ -193,7 +191,6 @@
 		/obj/item/gun/ballistic/automatic/pistol/plasma_thrower = 1,
 		/obj/item/ammo_box/magazine/recharge/plasma_battery = 3,
 		/obj/item/storage/box/nri_flares = 1,
-		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
 		/obj/item/modular_computer/pda/ceti = 1,
 	)
@@ -231,7 +228,6 @@
 		/obj/item/ammo_box/magazine/napad = 6,
 		/obj/item/lightreplacer/blue = 1,
 		/obj/item/storage/box/nri_flares = 1,
-		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
 		/obj/item/modular_computer/pda/ceti = 1,
 	)
