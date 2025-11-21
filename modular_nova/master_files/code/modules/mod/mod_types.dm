@@ -303,7 +303,9 @@
 		/obj/item/mod/module/longfall,
 		/obj/item/mod/module/gps,
 	)
-	default_pins = list()
+	default_pins = list(
+		/obj/item/mod/module/flashlight,
+	)
 	/// Copy/pasted from the Responsory modsuits.
 	/// The insignia type, insignias show what sort of member of the ERT you're dealing with.
 	var/insignia_type
