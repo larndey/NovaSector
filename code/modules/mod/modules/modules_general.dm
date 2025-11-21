@@ -81,8 +81,9 @@
 		storage module, it is still an effective alternative with decent storage capacity."
 	icon_state = "storage_large"
 	max_w_class = WEIGHT_CLASS_BULKY
-	max_combined_w_class = 75
+	max_combined_w_class = 60
 	max_items = 14
+	big_nesting = TRUE
 
 /obj/item/mod/module/storage/belt
 	name = "MOD case storage module"
