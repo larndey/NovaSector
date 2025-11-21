@@ -11,27 +11,38 @@
 	assignment = "PCI-DMO Responsory Agent"
 	department_color = LIGHT_COLOR_INTENSE_RED
 	threat_modifier = -10 // This counts as military intervention
-	sechud_icon_state = SECHUD_DEATH_COMMANDO
+	sechud_icon_state = SECHUD_SPACE_POLICE
 
 /datum/id_trim/phoenixcollective/ert/cmdr
-	assignment = "PCI-DMO Responsory Command"
+	assignment = "PCI-DD Responsory Commander"
 	subdepartment_color = COLOR_COMMAND_BLUE
 	sechud_icon_state = SECHUD_EMERGENCY_RESPONSE_TEAM_COMMANDER
 
 /datum/id_trim/phoenixcollective/ert/sec
-	assignment = "PCI-DMO Responsory Trooper"
+	assignment = "PCI-DD Responsory Trooper"
 	subdepartment_color = COLOR_SECURITY_RED
 	sechud_icon_state = SECHUD_SECURITY_RESPONSE_OFFICER
 
 /datum/id_trim/phoenixcollective/ert/med
-	assignment = "PCI-DMO Responsory Medic"
+	assignment = "PCI-DHS Responsory Medic"
 	subdepartment_color = COLOR_MEDICAL_BLUE
 	sechud_icon_state = SECHUD_MEDICAL_RESPONSE_OFFICER
 
 /datum/id_trim/phoenixcollective/ert/eng
-	assignment = "PCI-DMO Responsory Engineer"
+	assignment = "PCI-IND Responsory Engineer"
 	subdepartment_color = COLOR_ENGINEERING_ORANGE
 	sechud_icon_state = SECHUD_ENGINEERING_RESPONSE_OFFICER
+
+/datum/id_trim/phoenixcollective/ert/death
+	assignment = "PCI-DMO Terminus Operative"
+	department_color = COLOR_CRAYON_BLACK
+	sechud_icon_state = SECHUD_DEATH_COMMANDO
+
+/datum/id_trim/phoenixcollective/ert/cmdr/hvy
+	assignment = "PCI-DMO Field Commander"
+
+/datum/id_trim/phoenixcollective/ert/sec/hvy
+	assignment = "PCI-DMO Elite"
 
 /datum/id_trim/phoenixcollective/ert/New()
 	. = ..()

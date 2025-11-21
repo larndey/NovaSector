@@ -1483,9 +1483,17 @@
 	name = "phoenix collective ERT-CMDR ID"
 	trim = /datum/id_trim/phoenixcollective/ert/cmdr
 
+/obj/item/card/id/advanced/black/phoenix/ert/cmdr/elite
+	name = "phoenix collective elite ERT-CMDR ID"
+	trim = /datum/id_trim/phoenixcollective/ert/cmdr/hvy
+
 /obj/item/card/id/advanced/black/phoenix/ert/sec
 	name = "phoenix collective ERT-SEC ID"
 	trim = /datum/id_trim/phoenixcollective/ert/sec
+
+/obj/item/card/id/advanced/black/phoenix/ert/sec/elite
+	name = "phoenix collective elite ERT-SEC ID"
+	trim = /datum/id_trim/phoenixcollective/ert/sec/hvy
 
 /obj/item/card/id/advanced/black/phoenix/ert/med
 	name = "phoenix collective ERT-MED ID"

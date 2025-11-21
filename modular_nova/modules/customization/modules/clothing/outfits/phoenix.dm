@@ -69,8 +69,34 @@
 	l_hand = null
 	r_hand = null
 
+/datum/outfit/phoenix/ert/command/elite
+	name = "Phoenix Collective ERT - Cmd-Elite"
+
+	id = /obj/item/card/id/advanced/black/phoenix/ert/cmdr/elite
+	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/plasma_marksman = 1,
+		/obj/item/ammo_box/magazine/pulse/extended = 3,
+		/obj/item/ammo_box/magazine/recharge/plasma_battery = 2,
+		/obj/item/storage/box/alienhandcuffs = 1,
+		/obj/item/storage/box/fragnades = 1,
+		/obj/item/storage/box/flashbangs = 1,
+		/obj/item/storage/box/nri_flares = 1,
+		/obj/item/beamout_tool = 1,
+		/obj/item/modular_computer/pda/ceti = 1,
+	)
+
 /datum/outfit/phoenix/ert/command/pm
 	name = "Phoenix Collective ERT - Commander (Plasmaman)"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+	uniform = /obj/item/clothing/under/plasmaman/security
+	gloves = /obj/item/clothing/gloves/color/plasmaman/black
+	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
+	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
+
+/datum/outfit/phoenix/ert/command/elite/pm
+	name = "Phoenix Collective ERT - Cmd-Elite (Plasmaman)"
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman/security
 	uniform = /obj/item/clothing/under/plasmaman/security
@@ -103,15 +129,37 @@
 		/obj/item/storage/box/fragnades = 1,
 		/obj/item/storage/box/flashbangs = 1,
 		/obj/item/storage/box/nri_flares = 1,
-		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
 		/obj/item/modular_computer/pda/ceti = 1,
 	)
 	l_hand = null
 	r_hand = null
 
+/datum/outfit/phoenix/ert/security/elite
+	name = "Phoenix Collective ERT - Sec-Elite"
+
+	id = /obj/item/card/id/advanced/black/phoenix/ert/sec/elite
+	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/pulse/extended = 6,
+		/obj/item/storage/box/fragnades = 1,
+		/obj/item/storage/box/flashbangs = 1,
+		/obj/item/storage/box/nri_flares = 1,
+		/obj/item/beamout_tool = 1,
+		/obj/item/modular_computer/pda/ceti = 1,
+	)
+
 /datum/outfit/phoenix/ert/security/pm
 	name = "Phoenix Collective ERT - Security (Plasmaman)"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+	uniform = /obj/item/clothing/under/plasmaman/security
+	gloves = /obj/item/clothing/gloves/color/plasmaman/black
+	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
+	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
+
+/datum/outfit/phoenix/ert/security/elite/pm
+	name = "Phoenix Collective ERT - Sec-Elite (Plasmaman)"
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman/security
 	uniform = /obj/item/clothing/under/plasmaman/security
@@ -215,7 +263,7 @@
 	ears = /obj/item/radio/headset/phoenix/cc
 	glasses = /obj/item/clothing/glasses/hud/medsechud
 	l_pocket = /obj/item/melee/energy/sword/saber/red
-	r_pocket = null
+	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/clandestine/unrestricted = 1,
 		/obj/item/ammo_box/magazine/m10mm/hp = 3,
@@ -242,8 +290,8 @@
 	ears = /obj/item/radio/headset/phoenix/cc
 	glasses = /obj/item/clothing/glasses/hud/diagnostic/night
 	mask = /obj/item/clothing/mask/gas/sechailer
-	l_pocket = /obj/item/dualsaber/purple
-	r_pocket = /obj/item/storage/bag/sheetsnatcher/debug
+	l_pocket = /obj/item/storage/bag/sheetsnatcher/debug
+	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	backpack_contents = list(
 		/obj/item/storage/part_replacer/bluespace/tier4maxout = 1,
 		/obj/item/storage/toolbox/guncase/nova/opfor/phoenix/pulserifle/def/cutefrisk = 1,
@@ -251,6 +299,7 @@
 		/obj/item/storage/box/cables = 1,
 		/obj/item/modular_computer/pda/heads/rd = 1,
 		/obj/item/stock_parts/power_store/cell/infinite/nif_cell = 1,
+		/obj/item/dualsaber/purple = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
 	)
