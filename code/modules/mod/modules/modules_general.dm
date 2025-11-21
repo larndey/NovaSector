@@ -85,6 +85,12 @@
 	max_items = 14
 	big_nesting = TRUE
 
+/obj/item/mod/module/storage/phoenix/Initialize(mapload)
+	. = ..()
+	atom_storage.set_holdable(null, list(/obj/item/storage/backpack))
+
+/// EXOBYTECHNOVA UPD END
+
 /obj/item/mod/module/storage/belt
 	name = "MOD case storage module"
 	desc = "Some concessions had to be made when creating a compressed modular suit core. \
