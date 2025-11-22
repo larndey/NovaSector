@@ -165,7 +165,7 @@ EVENTS_FREQUENCY_LOWER 2400
 
 ## The upper bound, in deciseconds, for how soon another random event can be scheduled.
 ## Defaults to 4200 deciseconds or 7 minutes
-EVENTS_FREQUENCY_UPPER 7200
+EVENTS_FREQUENCY_UPPER 7800
 
 ## AI ###
 

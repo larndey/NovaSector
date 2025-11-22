@@ -56,18 +56,18 @@ AUTOTRANSFER
 
 ## autovote initial delay (deciseconds in real time) before first automatic transfer vote call (default 120 minutes) (now 240)
 ## Set to 0 to disable the subsystem altogether.
-VOTE_AUTOTRANSFER_INITIAL 144000
+VOTE_AUTOTRANSFER_INITIAL 72000
 
 ## autovote delay (deciseconds in real time) before sequential automatic transfer votes are called (default 30 minutes) (now 120)
-VOTE_AUTOTRANSFER_INTERVAL 72000
+VOTE_AUTOTRANSFER_INTERVAL 36000
 
 ## autovote maximum votes until automatic transfer call. (default 4)
 ## Set to 0 to force automatic crew transfer after the 'vote_autotransfer_initial' elapsed.
 ## Set to -1 to disable the maximum votes cap.
-VOTE_AUTOTRANSFER_MAXIMUM 4
+VOTE_AUTOTRANSFER_MAXIMUM -1
 
 ## Policy for what people remember after dying and being brought back to life
-BLACKOUTPOLICY You remember nothing after you blacked out and you do not remember who or what events killed you. However, you can have faint recollection of what led up to it.
+BLACKOUTPOLICY You remember nothing after you blacked out, and you do not remember who or what events killed you. However, you can have faint recollection of what led up to it.
 
 ## Combat indicator, comment out to disable it
 COMBAT_INDICATOR
@@ -106,7 +106,7 @@ SSDECAY_DISABLE_NESTS
 #DISABLE_MISMATCHED_PARTS
 
 ## Do we allow consecutive catastrophic events?
-ALLOW_CONSECUTIVE_CATASTROPIC_EVENTS
+#ALLOW_CONSECUTIVE_CATASTROPIC_EVENTS
 
 ## What is the most amount of time the next event can run?
 EVENT_FREQUENCY_UPPER 8400
@@ -172,7 +172,7 @@ REPLACE_SECBELT_FLASHBANGS_WITH_BOLA
 #BORG_GATEWAY_BLACKLIST
 
 ## Uncomment to make flashbangs forbidden during green alerts
-FLASHBANGS_FORBIDDEN_DURING_GREEN
+#FLASHBANGS_FORBIDDEN_DURING_GREEN
 
 ## The ruin budget for SerenityStation's upper z-level.
 JUNGLE_BUDGET 2

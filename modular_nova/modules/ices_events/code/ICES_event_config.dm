@@ -68,28 +68,28 @@
  * Anomalies
  */
 /datum/round_event_control/anomaly/anomaly_bioscrambler
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_bluespace
-	max_occurrences = 2
+	max_occurrences = 50 /// Unrestricted by ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_dimensional
-	max_occurrences = 2
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_ectoplasm
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_flux
-	max_occurrences = 1
+	max_occurrences = 50 /// Unrestricted by ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 // We have other intensities
 /datum/round_event_control/anomaly/anomaly_grav
-	max_occurrences = 2
+	max_occurrences = 10 /// Restriction Lessened by ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_grav/high
@@ -98,16 +98,16 @@
 	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_hallucination
-	max_occurrences = 2
+	max_occurrences = 50 /// Unrestricted by ExobytechNova - AFUTU
 	weight = HIGH_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_pyro
-	max_occurrences = 1
-	min_players = 40
+	max_occurrences = 50 /// Unrestricted by ExobytechNova - AFUTU
+	min_players = 10 /// Restriction Lessened by ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_vortex
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = VERY_LOW_EVENT_FREQ
 
 /**
@@ -116,7 +116,7 @@
  * TODO: Make it not consume an event slot
  */
 /datum/round_event_control/aurora_caelus
-	max_occurrences = 3
+	max_occurrences = 1 /// Restriction Tightened by ExobytechNova - AFUTU
 	weight = HIGH_EVENT_FREQ
 
 /**
@@ -131,7 +131,7 @@
  * Brand Intelligence
  */
 /datum/round_event_control/brand_intelligence
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = VERY_LOW_EVENT_FREQ
 
 /**
@@ -155,7 +155,7 @@
  * Carp Migration
  */
 /datum/round_event_control/carp_migration
-	max_occurrences = 2
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = HIGH_EVENT_FREQ
 
 /**
@@ -165,10 +165,12 @@
  */
 /datum/round_event_control/communications_blackout
 	max_occurrences = 3
+	min_players = 4 /// Restriction Tightened by ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/processor_overload
 	max_occurrences = 1
+	min_players = 4 /// Restriction Tightened by ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ
 	intensity_restriction = TRUE
 
@@ -191,11 +193,13 @@
 
 /datum/round_event_control/fake_virus
 	max_occurrences = 1
+	min_players = 4 /// Restriction Tightened by ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/heart_attack
-	max_occurrences = 1
-	weight = MED_EVENT_FREQ
+	max_occurrences = 4 /// Restriction Lessened by ExobytechNova - AFUTU
+	min_players = 4 /// Restriction Tightened by ExobytechNova - AFUTU
+	weight = LOW_EVENT_FREQ /// Restriction Tightened by ExobytechNova - AFUTU
 
 /**
  * Earthquakes
@@ -212,12 +216,12 @@
  *
  */
 /datum/round_event_control/electrical_storm
-	max_occurrences = 1
+	max_occurrences = 10 /// Restriction Lessened by ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/grid_check
-	max_occurrences = 1
-	weight = MED_EVENT_FREQ
+	max_occurrences = 50 /// Unrestricted by ExobytechNova - AFUTU
+	weight = LOW_EVENT_FREQ
 
 /**
  * False Alarm
@@ -231,13 +235,14 @@
  */
 /datum/round_event_control/gravity_generator_blackout
 	max_occurrences = 1
-	weight = MED_EVENT_FREQ
+	weight = LOW_EVENT_FREQ /// Restriction Tightened by ExobytechNova - AFUTU
 
 /**
  * Grey Tide
  */
 /datum/round_event_control/grey_tide
-	max_occurrences = 2
+	max_occurrences = 1 /// Restriction Tightened by ExobytechNova - AFUTU
+	min_players = 5
 	weight = LOW_EVENT_FREQ
 
 /**
@@ -251,7 +256,7 @@
  * Immovable Rod
  */
 /datum/round_event_control/immovable_rod
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ
 	intensity_restriction = TRUE
 
@@ -261,21 +266,23 @@
  * TODO: Make it not consume an event slot
  */
 /datum/round_event_control/market_crash
-	max_occurrences = 1
-	weight = MED_EVENT_FREQ
+	max_occurrences = 3 /// Restriction Lessened by ExobytechNova - AFUTU
+	weight = LOW_EVENT_FREQ /// Restriction Tightened by ExobytechNova - AFUTU
 
 /**
  * Mass Hallucination
  *
  * TODO: Make it not consume an event slot
+ *
+ * EXONOVA DISABLED: Really interferes with roleplay and/or lore events, and can be
+ * an actual jumpscare when it happens randomly. This is SS13 not FNAF 3.
  */
 /datum/round_event_control/mass_hallucination
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ
 
 /**
  * Meteors / Space Dust
- *
  */
 /datum/round_event_control/meteor_wave
 	max_occurrences = 0
@@ -283,8 +290,9 @@
 	intensity_restriction = TRUE
 
 /datum/round_event_control/meteor_wave/ices
-	max_occurrences = 1
-	weight = LOW_EVENT_FREQ
+	earliest_start = 4 HOURS /// Restriction Tightened by ExobytechNova - AFUTU
+	max_occurrences = 50 // Listen if the round has gone for 4hrs we can break shit
+	weight = MED_EVENT_FREQ // Listen if the round has gone for 4hrs we can break shit
 
 // No preset ones, we have our own custom preset above
 /datum/round_event_control/meteor_wave/threatening
@@ -330,7 +338,7 @@
  * Moldies
  */
 /datum/round_event_control/mold
-	max_occurrences = 1
+	max_occurrences = 0 /// ABSOLUTELY FUCKING NOT!!! - AFUTU
 	weight = LOW_EVENT_FREQ
 	intensity_restriction = TRUE
 
@@ -346,11 +354,11 @@
  * Syndicate Portal Storm
  */
 /datum/round_event_control/portal_storm_syndicate
-	max_occurrences = 2
+	max_occurrences = 0 /// ABSOLUTELY FUCKING NOT!!! - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/portal_storm_narsie
-	max_occurrences = 1
+	max_occurrences = 0 /// ABSOLUTELY FUCKING NOT!!! - AFUTU
 	weight = LOW_EVENT_FREQ
 
 /**
@@ -359,7 +367,7 @@
  * Disabled: Unintutivie design and incompatibility with this server
  */
 /datum/round_event_control/radiation_leak
-	max_occurrences = 1
+	max_occurrences = 0
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/radiation_storm
@@ -371,19 +379,19 @@
  *
  */
 /datum/round_event_control/vent_clog
-	max_occurrences = 1
+	max_occurrences = 3 /// Restriction Lessened by ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/vent_clog/major
 	max_occurrences = 1
-	weight = MED_EVENT_FREQ
+	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/vent_clog/critical
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/vent_clog/strange
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ
 
 /**
@@ -392,24 +400,25 @@
  */
 
 /datum/round_event_control/scrubber_overflow
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/scrubber_overflow/threatening
-	max_occurrences = 1
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/scrubber_overflow/catastrophic
-	max_occurrences = 0
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 
 /datum/round_event_control/scrubber_overflow/ices
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /**
  * Human-level Intelligence
  */
 /datum/round_event_control/sentience
-	max_occurrences = 2
+	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /**
@@ -425,16 +434,14 @@
 	weight = HIGH_EVENT_FREQ
 
 /datum/round_event_control/shuttle_loan
-	max_occurrences = 2
+	max_occurrences = 5 /// Restriction Lessened by ExobytechNova - AFUTU
 	weight = MED_EVENT_FREQ
 
 /**
  * Spess Vines
- *
- *
  */
 /datum/round_event_control/spacevine
-	max_occurrences = 2
+	max_occurrences = 0 /// ABSOLUTELY FUCKING NOT!!! - AFUTU
 	weight = MED_EVENT_FREQ
 
 /**
@@ -479,7 +486,7 @@
  */
 /datum/round_event_control/wormholes
 	max_occurrences = 2
-	weight = MED_EVENT_FREQ
+	weight = VERY_LOW_EVENT_FREQ /// Restriction Tightened by ExobytechNova - AFUTU
 
 
 
