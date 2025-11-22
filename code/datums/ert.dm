@@ -159,7 +159,7 @@
 	roles = list(/datum/antagonist/ert/phoenix/security, /datum/antagonist/ert/phoenix/medical, /datum/antagonist/ert/phoenix/engie)
 	rename_team = "Phoenix Collective Responsory Unit"
 	code = "Red"
-	polldesc = "a Phoenix Collective imperial response team"
+	polldesc = "a Code Red Phoenix Collective imperial response team"
 
 /datum/ert/phoenix/elite
 	teamsize = 4
