@@ -52,7 +52,7 @@
 /datum/id_trim/phoenixcollective/official
 	assignment = "Phoenix Collective Central Command"
 	sechud_icon_state = SECHUD_SOLFED_LIASON
-	department_color = COLOR_PRISONER_ORANGE
+	department_color = COLOR_STRONG_VIOLET
 	subdepartment_color = COLOR_ORANGE
 	threat_modifier = -10 // CentCom are 'legally' allowed to do whatever the fuck they want. Allegedly.
 
