@@ -1,10 +1,10 @@
 /*----- PHOENIX COLLECTIVE - "AXION PARIAH" Shuttle Code -----*/
-/datum/map_template/shuttle/ert/phoenix
+/datum/map_template/shuttle/planetary/phoenix
 	prefix = "_maps/shuttles/nova/phoenix/"
 	suffix = "phoenix_arrival_shuttle"
 	name = "\"Axion Pariah\" Phoenix Collective Transport Shuttle"
 
-/datum/map_template/shuttle/ert/phoenix/axionlocked
+/datum/map_template/shuttle/planetary/phoenix/axionlocked
 	prefix = "_maps/shuttles/nova/phoenix/"
 	suffix = "phoenix_arrival_shuttle_station"
 	name = "Station-Locked \"Axion Pariah\" Phoenix Collective Transport Shuttle"
@@ -14,7 +14,7 @@
 	desc = "Used to control an Axion Pariah model shuttle."
 	circuit = /obj/item/circuitboard/computer/phoenix
 	shuttleId = "phoenix_arrival_shuttle"
-	possible_destinations = "phoenix_general_custom;phoenix_general_home;phoenix_arrivals_stationary;phoenix_arrivals_transfer;whiteship_home"
+	possible_destinations = "phoenix_general_custom;phoenix_general_home;phoenix_arrivals_stationary;phoenix_arrivals_transfer;whiteship_home;syndicate_ne;syndicate_nw;syndicate_n;syndicate_se;syndicate_sw;syndicate_s"
 	req_access = list(ACCESS_CENT_GENERAL)
 
 /obj/machinery/computer/shuttle/phoenix/axionlocked
@@ -29,7 +29,7 @@
 	shuttleId = "phoenix_arrival_shuttle"
 	lock_override = CAMERA_LOCK_STATION
 	shuttlePortId = "phoenix_general_custom"
-	jump_to_ports = list( "phoenix_general_home" = 1, "syndicate_nw" = 1, )
+	jump_to_ports = list( "phoenix_general_home" = 1, "syndicate_ne" = 1, "syndicate_nw" = 1, "syndicate_n" = 1, "syndicate_se" = 1, "syndicate_sw" = 1, "syndicate_s" = 1, "ferry_home" = 1, )
 	view_range = 12
 	zlink_range = 1
 	move_up_action = /datum/action/innate/camera_multiz_up

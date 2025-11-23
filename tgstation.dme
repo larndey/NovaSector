@@ -8464,6 +8464,7 @@
 #include "modular_nova\modules\mapping\code\mapping_directionals.dm"
 #include "modular_nova\modules\mapping\code\misc.dm"
 #include "modular_nova\modules\mapping\code\mob_spawns.dm"
+#include "modular_nova\modules\mapping\code\phoenix_shuttles.dm"
 #include "modular_nova\modules\mapping\code\planet_turfs.dm"
 #include "modular_nova\modules\mapping\code\planetary_atmos_helper.dm"
 #include "modular_nova\modules\mapping\code\pool.dm"
