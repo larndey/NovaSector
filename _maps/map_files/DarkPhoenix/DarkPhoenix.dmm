@@ -5170,7 +5170,7 @@
 /area/station/engineering/atmos)
 "fIR" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium{
-	spawn_list = list(/obj/structure/grille,/obj/structure/window/reinforced/plasma/plastitanium/indestructible)
+	spawn_list = list(/obj/structure/grille/indestructible,/obj/structure/window/reinforced/plasma/plastitanium/indestructible)
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/station/hallway/secondary/dock)
@@ -5676,7 +5676,7 @@
 /area/station/security/checkpoint/service)
 "goI" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium{
-	spawn_list = list(/obj/structure/grille,/obj/structure/window/reinforced/plasma/plastitanium/indestructible)
+	spawn_list = list(/obj/structure/grille/indestructible,/obj/structure/window/reinforced/plasma/plastitanium/indestructible)
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 8
