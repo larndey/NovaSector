@@ -87,7 +87,3 @@
 
 /area/shuttle/solfed/fancy
 	name = "SFTS-1221 Transport Shuttle"
-
-/area/shuttle/phoenix
-	name = "Axion Pariah"
-	static_lighting = TRUE

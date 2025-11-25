@@ -1,20 +1,35 @@
+/*----- PHOENIX COLLECTIVE - "PERSONAL WHITESHIP" Shuttle Code -----*/
+/datum/map_template/shuttle/whiteship/personalshuttle_phoenix
+	suffix = "personalshuttle_phoenix"
+	name = "Phoenix Collective Shuttle"
+	description = "A retrofitted and upgraded version of the Personal Travel Shuttle, utilized by Phoenix Collective officials and other crews."
+	admin_notes = "Has super fucking overpowered shit, you really shouldn't spawn this for non-admins."
+/*----- End of PHOENIX WHITESHIP Shuttle Code -----*/
+
 /*----- PHOENIX COLLECTIVE - "AXION PARIAH" Shuttle Code -----*/
+/area/shuttle/phoenix
+	name = "Axion Pariah"
+	static_lighting = TRUE
+
 /datum/map_template/shuttle/planetary/phoenix
 	prefix = "_maps/shuttles/nova/phoenix/"
 	suffix = "phoenix_arrival_shuttle"
 	name = "\"Axion Pariah\" Phoenix Collective Transport Shuttle"
+	description = "An unarmed non-military space shuttle for transport of Phoenix Collective Imperials and/or civilian crews."
 
 /datum/map_template/shuttle/planetary/phoenix/axionlocked
 	prefix = "_maps/shuttles/nova/phoenix/"
 	suffix = "phoenix_arrival_shuttle_station"
 	name = "Station-Locked \"Axion Pariah\" Phoenix Collective Transport Shuttle"
+	description = "This Axion Pariah has been modified to be locked to a station's arrivals dock and transfer satellite."
+	admin_notes = "Doesn't function properly on maps other than Dark Phoenix."
 
 /obj/machinery/computer/shuttle/phoenix
 	name = "\improper Axion Pariah control console"
 	desc = "Used to control an Axion Pariah model shuttle."
 	circuit = /obj/item/circuitboard/computer/phoenix
 	shuttleId = "phoenix_arrival_shuttle"
-	possible_destinations = "phoenix_general_custom;phoenix_general_home;phoenix_arrivals_stationary;phoenix_arrivals_transfer;whiteship_home;syndicate_ne;syndicate_nw;syndicate_n;syndicate_se;syndicate_sw;syndicate_s"
+	possible_destinations = "phoenix_general_custom;phoenix_general_home;phoenix_arrivals_stationary;phoenix_arrivals_transfer;whiteship_home;ferry_home;syndicate_ne;syndicate_nw;syndicate_n;syndicate_se;syndicate_sw;syndicate_s"
 	req_access = list(ACCESS_CENT_GENERAL)
 
 /obj/machinery/computer/shuttle/phoenix/axionlocked
@@ -51,3 +66,31 @@
 	pixel_y = 0
 
 /*----- End of AXION PARIAH Shuttle Code -----*/
+
+/*----- PHOENIX COLLECTIVE - "BLACK KNIFE" Shuttle Code -----*/
+/area/shuttle/phoenix/ert
+	name = "Black Knife"
+
+/datum/map_template/shuttle/planetary/phoenix/ert
+	prefix = "_maps/shuttles/nova/phoenix/"
+	suffix = "phoenix_ert_shuttle"
+	name = "\"Black Knife\" Phoenix Collective Imperial Shuttle"
+	description = "The \"Black Knife\" Imperial shuttle is the standard for station emergency response. Armed with elite technology and plenty of resources for any ERT, \
+		this is the go-to for many of the Phoenix Collective's own emergency responses. Contains crew quarters, crew commons, bridge, armory, a medbay setup, and bunks."
+
+/obj/machinery/computer/shuttle/phoenix/ert
+	name = "\improper Black Knife control console"
+	desc = "Used to control an Black Knife model shuttle."
+	circuit = /obj/item/circuitboard/computer/phoenix
+	shuttleId = "phoenix_ert_shuttle"
+	possible_destinations = "phoenix_ert_custom;phoenix_general_custom;phoenix_general_home;whiteship_home;ferry_home;syndicate_ne;syndicate_nw;syndicate_n;syndicate_se;syndicate_sw;syndicate_s"
+
+/obj/machinery/computer/camera_advanced/shuttle_docker/phoenix/ert
+	name = "\improper Black Knife navigation computer"
+	desc = "The navigation console for an Black Knife model ERT shuttle."
+	shuttleId = "phoenix_ert_shuttle"
+	shuttlePortId = "phoenix_ert_custom"
+	jump_to_ports = list( "phoenix_general_home" = 1, "syndicate_ne" = 1, "syndicate_nw" = 1, "syndicate_n" = 1, "syndicate_se" = 1, "syndicate_sw" = 1, "syndicate_s" = 1, "ferry_home" = 1, )
+
+/obj/item/gps/computer/space/phoenix/ert
+	gpstag = "*PC - BLKNIF"
