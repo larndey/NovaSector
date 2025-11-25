@@ -75,8 +75,10 @@
 	prefix = "_maps/shuttles/nova/phoenix/"
 	suffix = "ert_phoenix_shuttle"
 	name = "\"Black Knife\" Phoenix Collective Imperial Shuttle"
-	description = "The \"Black Knife\" Imperial shuttle is the standard for station emergency response. Armed with elite technology and plenty of resources for any ERT, \
-		this is the go-to for many of the Phoenix Collective's own emergency responses. Contains crew quarters, crew commons, bridge, armory, and a medbay setup."
+	description = "The \"Black Knife\" Imperial shuttle is the standard for military response crews. Supplied with elite technology and plenty of resources for any ERT, \
+		this is the go-to for many of the Phoenix Collective's own emergency responses. Contains crew commons, a bridge w/ sleeper units, a stocked armory, and an emergency \
+		medical bay."
+	admin_notes = "This is meant for military interventions and should not be used for most ERT situations. Shuttle might be too large to fit in the dock(s) of some stations."
 
 /obj/machinery/computer/shuttle/phoenix/ert
 	name = "\improper Black Knife control console"
