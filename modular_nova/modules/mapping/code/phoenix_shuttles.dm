@@ -73,6 +73,12 @@
 /area/shuttle/phoenix/ert/common
 	name = "Black Knife Common Room"
 
+/area/shuttle/phoenix/ert/engine
+	ambience_index = AMBIENCE_MAINT
+	forced_ambience = TRUE
+	ambient_buzz = 'sound/ambience/maintenance/source_corridor2.ogg'
+	ambient_buzz_vol = 20
+
 /area/shuttle/phoenix/ert/engine/left
 	name = "Black Knife Left Engine Maintenance"
 
@@ -81,6 +87,7 @@
 
 /area/shuttle/phoenix/ert/medbay
 	name = "Black Knife Emergency Medbay"
+	ambience_index = AMBIENCE_VIROLOGY
 
 /area/shuttle/phoenix/ert/armory
 	name = "Black Knife Armory"

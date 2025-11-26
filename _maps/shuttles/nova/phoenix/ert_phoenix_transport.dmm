@@ -3,6 +3,12 @@
 /obj/machinery/mecha_part_fabricator,
 /turf/open/floor/plating/reinforced/airless,
 /area/shuttle/phoenix/ert/engine/right)
+"aP" = (
+/obj/machinery/computer/upload/ai{
+	dir = 1
+	},
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "bJ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/machinery/light/blacklight/directional/west,
@@ -769,6 +775,13 @@
 /obj/machinery/smartfridge/organ,
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/medbay)
+"EH" = (
+/obj/structure/cable,
+/obj/machinery/computer/atmos_alert{
+	dir = 1
+	},
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "EK" = (
 /obj/structure/curtain,
 /turf/open/floor/pod/light,
@@ -1508,7 +1521,7 @@ ph
 XH
 DZ
 Ja
-Ja
+EH
 Ja
 yt
 MV
@@ -1608,7 +1621,7 @@ ph
 WE
 DZ
 Ja
-DZ
+aP
 DZ
 Er
 MV
