@@ -438,7 +438,7 @@
 /area/shuttle/phoenix/ert/engine/left)
 "rN" = (
 /turf/closed/wall/r_wall/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "rP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/machinery/space_heater,
@@ -946,6 +946,9 @@
 /obj/item/surgery_tray/full/advanced,
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/medbay)
+"Ml" = (
+/turf/closed/wall/r_wall/plastitanium,
+/area/shuttle/phoenix/ert/engine/left)
 "My" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/flashbangs,
@@ -1792,7 +1795,7 @@ FV
 FV
 FV
 FV
-rN
+Ml
 Hx
 nW
 FW

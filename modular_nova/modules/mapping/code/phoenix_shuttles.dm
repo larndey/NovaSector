@@ -90,7 +90,7 @@
 
 /datum/map_template/shuttle/ert/phoenix
 	prefix = "_maps/shuttles/nova/phoenix/"
-	suffix = "ert_phoenix_shuttle"
+	suffix = "phoenix_transport"
 	name = "\"Black Knife\" Phoenix Collective Imperial Shuttle"
 	description = "The \"Black Knife\" Imperial shuttle is the standard for military response crews. Supplied with elite technology and plenty of resources for any ERT, \
 		this is the go-to for many of the Phoenix Collective's own emergency responses. Contains crew commons, a bridge w/ sleeper units, a stocked armory, and an emergency \
