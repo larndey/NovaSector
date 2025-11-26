@@ -160,13 +160,15 @@
 	rename_team = "Phoenix Collective Responsory Unit"
 	code = "Red"
 	polldesc = "a Code Red Phoenix Collective imperial response team"
+	ert_template = /datum/map_template/shuttle/ert/phoenix
 
 /datum/ert/phoenix/elite
 	teamsize = 4
 	leader_role = /datum/antagonist/ert/phoenix/elite
 	enforce_human = FALSE //Xenophobia is bad, death to SolFed --PC
 	roles = list(/datum/antagonist/ert/phoenix/medical/elite, /datum/antagonist/ert/phoenix/security/elite, /datum/antagonist/ert/phoenix/security/elite)
-	rename_team = "Phoenix Collective Elite DMO Unit"
+	rename_team = "Phoenix Collective DMO Elite Squad"
 	code = "Epsilon"
 	mission = "Accomplish the interests of the Phoenix Collective."
 	polldesc = "an elite Phoenix Collective military unit"
+	ert_template = /datum/map_template/shuttle/ert/phoenix

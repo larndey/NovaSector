@@ -2,11 +2,25 @@
 "ad" = (
 /obj/machinery/mecha_part_fabricator,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
+"bJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/light/blacklight/directional/west,
+/obj/machinery/holopad/secure,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "bS" = (
 /obj/machinery/computer/operating,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"cb" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/machinery/power/micro_reactor/bapgm,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "dk" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Left Engine Maintenance"
@@ -15,14 +29,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "do" = (
 /turf/template_noop,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "dr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/left)
 "dy" = (
 /obj/item/storage/medkit/frontier/phoenix/stocked{
 	pixel_x = 6;
@@ -37,13 +51,26 @@
 	pixel_y = 2
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "dE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"dN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/phoenix/ert/medbay)
+"dS" = (
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/medbay)
+"dU" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "eo" = (
 /obj/structure/rack/shelf,
 /obj/item/ammo_box/magazine/recharge/plasma_battery{
@@ -63,70 +90,120 @@
 	pixel_x = -6
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "eG" = (
 /turf/closed/wall/r_wall,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "eU" = (
 /obj/machinery/flatpacker,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "fq" = (
 /obj/machinery/computer/mech_bay_power_console{
 	dir = 4
 	},
+/obj/machinery/light_switch/directional/north,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"fz" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 1
+	},
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
+"fU" = (
+/obj/machinery/firealarm/directional/west,
+/obj/machinery/light/blacklight/directional/west,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
+"gb" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
 "gt" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/effect/landmark/ert_shuttle_spawn,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"gD" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
 "gE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"gF" = (
+/turf/closed/wall/r_wall/plastitanium/nodiagonal,
+/area/shuttle/phoenix/ert/engine/left)
 "gG" = (
 /obj/machinery/computer/camera_advanced{
 	dir = 1
 	},
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
+"gT" = (
+/obj/structure/lattice,
+/turf/closed/wall/r_wall/plastitanium,
+/area/shuttle/phoenix/ert/bridge)
 "gW" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/fragnades,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "hZ" = (
 /obj/structure/table/abductor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/item/language_manual/tradecreole,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "ih" = (
 /obj/structure/girder/reinforced,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "ir" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"iy" = (
+/obj/structure/table/abductor,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/item/book/granter/martial/cqc,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
 "iB" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "iP" = (
 /obj/structure/curtain,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"iT" = (
+/obj/machinery/ammo_workbench/unlocked,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
+"jo" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "jp" = (
 /obj/item/storage/medkit/frontier/phoenix/toxin/stocked{
 	pixel_x = 6;
@@ -142,39 +219,63 @@
 	pixel_y = 2
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "jF" = (
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
+"jR" = (
+/turf/closed/wall/r_wall/plastitanium/nodiagonal,
+/area/shuttle/phoenix/ert/engine/right)
+"jU" = (
+/obj/structure/lattice,
+/turf/template_noop,
+/area/shuttle/phoenix/ert/armory)
 "jV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "kC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"kV" = (
+/turf/closed/wall/r_wall/plastitanium,
+/area/shuttle/phoenix/ert/common)
+"lm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/full_charge,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "lv" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
 /obj/effect/landmark/ert_shuttle_brief_spawn,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"lC" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
 "lP" = (
 /obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/left)
 "ml" = (
 /obj/machinery/mech_bay_recharge_port{
 	dir = 2
 	},
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "mo" = (
 /obj/structure/flatpack_cart,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "mp" = (
 /obj/item/storage/bag/sheetsnatcher/debug{
 	pixel_x = -6;
@@ -184,31 +285,45 @@
 	pixel_y = -5;
 	pixel_x = 7
 	},
+/obj/structure/cable,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "mA" = (
 /obj/machinery/computer/mech_bay_power_console{
 	dir = 8
 	},
+/obj/machinery/light_switch/directional/south,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "mB" = (
 /obj/machinery/atmospherics/components/tank/air/layer4{
 	dir = 1
 	},
+/obj/machinery/airalarm/directional/east,
+/obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/left)
 "mE" = (
 /obj/structure/lattice,
 /turf/template_noop,
-/area/template_noop)
+/area/shuttle/phoenix/ert/medbay)
+"nm" = (
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/common)
 "nn" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox/loyalty{
 	pixel_y = 4
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"nq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
+"ns" = (
+/turf/closed/wall/r_wall/plastitanium,
+/area/shuttle/phoenix/ert/bridge)
 "nv" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Armory Storage"
@@ -216,8 +331,18 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"nG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
+"nM" = (
+/obj/machinery/firealarm/directional/west,
+/obj/machinery/light/blacklight/directional/west,
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "nP" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
@@ -225,61 +350,100 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/effect/landmark/ert_shuttle_spawn,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "nW" = (
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"oi" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/airalarm/directional/south,
+/obj/effect/mapping_helpers/airalarm/all_access,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "ok" = (
 /obj/machinery/computer/centcom_announcement{
 	dir = 1;
-	command_name = "Phoenix Collective ERT"
+	command_name = "Phoenix Collective ERT";
+	desc = "A console used for making priority Command Reports."
 	},
+/obj/structure/cable,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "oO" = (
 /obj/machinery/portable_atmospherics/canister/anesthetic_mix,
+/obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "oX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"ph" = (
+/turf/closed/wall/r_wall/plastitanium/nodiagonal,
+/area/shuttle/phoenix/ert/bridge)
 "pm" = (
 /turf/closed/wall/r_wall/plastitanium/nodiagonal,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"ps" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "pT" = (
 /obj/machinery/portable_atmospherics/scrubber,
+/obj/machinery/light_switch/directional/west,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/left)
+"pX" = (
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
 "ql" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"qW" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/turf/open/floor/plating,
+/area/shuttle/phoenix/ert/medbay)
 "qX" = (
 /obj/structure/tank_holder/anesthetic,
+/obj/machinery/wall_healer/free/directional/south,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "rd" = (
 /obj/vehicle/sealed/mecha/gygax/dark/loaded,
 /turf/open/floor/iron/recharge_floor,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "rj" = (
 /obj/structure/table/reinforced/plasmarglass,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "rp" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "ru" = (
-/obj/machinery/space_heater,
+/obj/machinery/power/smes/magical/cybersun,
+/obj/structure/cable,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/left)
+"rG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "rN" = (
 /turf/closed/wall/r_wall/plastitanium,
 /area/shuttle/phoenix/ert)
+"rP" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/space_heater,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "st" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/mechanical{
@@ -293,35 +457,61 @@
 	pixel_y = 2
 	},
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
+"sA" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "sT" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Right Engine Maintenance"
 	},
-/obj/effect/mapping_helpers/airlock/access/any/admin/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"sY" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/structure/cable,
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "tk" = (
 /obj/effect/spawner/structure/window/survival_pod,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/plating,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "tv" = (
 /obj/effect/spawner/structure/window/survival_pod,
 /turf/open/floor/plating,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"ty" = (
+/turf/closed/wall/r_wall/plastitanium,
+/area/shuttle/phoenix/ert/armory)
+"tP" = (
+/obj/machinery/firealarm/directional/east,
+/obj/machinery/light/blacklight/directional/east,
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "tQ" = (
 /obj/machinery/computer/camera_advanced/shuttle_docker/phoenix/ert{
 	dir = 1
 	},
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
+"tS" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/effect/mapping_helpers/apc/full_charge,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
 "uj" = (
 /obj/structure/table/abductor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "uk" = (
 /obj/structure/table/survival_pod,
 /obj/item/clothing/mask/breath/muzzle,
@@ -331,12 +521,24 @@
 	},
 /obj/item/healthanalyzer/advanced,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"uu" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "uG" = (
-/obj/machinery/cell_charger_multi,
-/obj/structure/table/reinforced,
+/obj/machinery/recharge_station,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"uN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
 "vp" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -344,21 +546,46 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/effect/landmark/ert_shuttle_spawn,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"vz" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
+"vJ" = (
+/obj/machinery/light/blacklight/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
+"vM" = (
+/obj/structure/table/abductor,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/item/book/granter/sign_language,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
 "vP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "wb" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"wj" = (
+/obj/machinery/firealarm/directional/south,
+/obj/structure/cable,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/right)
+"wk" = (
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "xl" = (
 /obj/structure/closet/emcloset/wall{
 	pixel_y = 32
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "xt" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
@@ -367,34 +594,75 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/effect/landmark/ert_shuttle_spawn,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "xC" = (
-/obj/structure/rack/gunrack,
+/obj/structure/rack,
+/obj/item/storage/toolbox/guncase/nova/pistol/opfor/plasma_marksman,
+/obj/item/storage/toolbox/guncase/nova/pistol/opfor/plasma_marksman{
+	pixel_y = 4
+	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"xH" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
+"yt" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/mapping_helpers/apc/full_charge,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/machinery/status_display/shuttle/directional/south{
+	pixel_x = 16
+	},
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "zB" = (
 /obj/machinery/sleeper/self_control,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "zM" = (
 /obj/machinery/computer/shuttle/phoenix/ert{
 	dir = 1
 	},
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
+"Ab" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/light_switch/directional/north,
+/obj/machinery/light/blacklight/directional/north,
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "Af" = (
 /obj/structure/curtain,
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "Aw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
+/obj/machinery/holopad/secure,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "Ax" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"AC" = (
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
+"AT" = (
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
+"Ba" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/phoenix/ert/armory)
 "Bf" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/robotic_repair/preemo/stocked{
@@ -404,13 +672,17 @@
 	pixel_y = 4
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "Bi" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"Bu" = (
+/obj/structure/girder/reinforced,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "BR" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Shuttle Bridge"
@@ -419,34 +691,48 @@
 /obj/effect/mapping_helpers/airlock/unres,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
+"CO" = (
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
 "CT" = (
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/charging{
 	pixel_y = 22
 	},
-/obj/item/defibrillator/loaded{
-	pixel_y = 6
-	},
+/obj/machinery/light/small/directional/north,
+/obj/item/defibrillator/loaded,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "Di" = (
 /obj/machinery/button/door/directional/north{
 	normaldoorcontrol = 1;
 	specialfunctions = 4;
 	id = s;
 	name = "Exterior Bolt Control";
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 26
 	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/light_switch/directional/north{
+	pixel_x = -5
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/effect/mapping_helpers/apc/full_charge,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "Dt" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "DK" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Armory Bridge Access"
@@ -454,54 +740,69 @@
 /obj/effect/mapping_helpers/airlock/access/any/admin/captain,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "DT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/effect/landmark/ert_shuttle_spawn,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "DZ" = (
-/obj/structure/chair/comfy/shuttle,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "Eb" = (
 /obj/machinery/computer/aifixer{
 	dir = 1
 	},
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "Er" = (
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/status_display/evac/directional/south{
+	pixel_x = -16
+	},
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "Eu" = (
 /obj/machinery/smartfridge/organ,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"EK" = (
+/obj/structure/curtain,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
+"EU" = (
+/turf/template_noop,
+/area/shuttle/phoenix/ert/engine/left)
+"FD" = (
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "FV" = (
 /turf/template_noop,
 /area/template_noop)
 "FW" = (
-/obj/structure/rack/gunrack,
 /obj/item/gun/ballistic/shotgun/riot/sol/super/empty{
-	icon_angle = 90;
-	pixel_x = -2
+	pixel_y = 4
 	},
+/obj/structure/rack,
 /obj/item/gun/ballistic/shotgun/riot/sol/super/empty{
-	icon_angle = 90
-	},
-/obj/item/gun/ballistic/shotgun/riot/sol/super/empty{
-	icon_angle = 90;
-	pixel_x = -14
+	pixel_y = -4
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "Ga" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"Gf" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
 "Gg" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 8;
@@ -510,14 +811,24 @@
 /obj/effect/mapping_helpers/airlock/access/any/admin/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "Gl" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
 	dir = 4;
 	name = "passive waste vent"
 	},
 /turf/open/floor/plating/reinforced/airless,
-/area/template_noop)
+/area/shuttle/phoenix/ert/medbay)
+"Go" = (
+/obj/structure/curtain,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
+"Gv" = (
+/obj/machinery/cell_charger_multi,
+/obj/structure/table/reinforced,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
 "Gw" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Medical Storage"
@@ -525,20 +836,37 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"GI" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/guncase/nova/opfor/phoenix/pulserifle/def,
+/obj/item/storage/toolbox/guncase/nova/opfor/phoenix/pulserifle/def{
+	pixel_y = 4
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "Hj" = (
 /obj/machinery/computer/station_alert{
 	dir = 1
 	},
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
+"Hx" = (
+/turf/closed/wall/r_wall/plastitanium/nodiagonal,
+/area/shuttle/phoenix/ert/armory)
 "HR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
+"If" = (
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "Ih" = (
 /obj/machinery/door/airlock/external{
 	id_tag = "phoenix_ert_exitbolts"
@@ -546,15 +874,38 @@
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/obj/docking_port/mobile{
+	dir = 2;
+	shuttle_id = "phoenix_ert_shuttle";
+	name = "phoenix ERT shuttle";
+	callTime = 300;
+	can_move_docking_ports = 1;
+	port_direction = 2;
+	launch_status = 0;
+	preferred_direction = 2;
+	ignitionTime = 120
+	},
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"Ja" = (
+/obj/structure/cable,
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
+"JF" = (
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/pod,
+/area/shuttle/phoenix/ert/bridge)
 "JM" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
 /obj/effect/landmark/ert_shuttle_spawn,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"Ku" = (
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "KB" = (
 /obj/machinery/door/airlock/external{
 	id_tag = "phoenix_ert_exitbolts"
@@ -567,33 +918,39 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/machinery/scanner_gate/preset_guns,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "KR" = (
 /obj/structure/closet/firecloset/wall{
 	pixel_y = 32
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "KT" = (
-/obj/structure/table/reinforced,
-/obj/item/tank/internals/emergency_oxygen/double{
-	pixel_y = -4
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
 	},
-/obj/item/tank/internals/emergency_oxygen/double{
-	pixel_y = 4
-	},
+/obj/machinery/airalarm/directional/east,
+/obj/effect/mapping_helpers/apc/full_charge,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"KU" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "LM" = (
 /obj/structure/table/survival_pod,
 /obj/item/surgery_tray/full/advanced,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "My" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/flashbangs,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "MK" = (
 /obj/machinery/recharger{
 	pixel_x = -5;
@@ -605,11 +962,11 @@
 	},
 /obj/structure/table/reinforced,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "MR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "MV" = (
 /obj/machinery/door/poddoor{
 	id = "phoenix_ert_windows";
@@ -617,41 +974,56 @@
 	},
 /obj/effect/spawner/structure/window/survival_pod,
 /turf/open/floor/plating,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "Nm" = (
 /obj/machinery/rnd/production/circuit_imprinter/offstation{
 	drop_direction = 8
 	},
+/obj/machinery/airalarm/directional/west,
+/obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "Ny" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"NH" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
+"NL" = (
+/obj/structure/lattice,
+/turf/closed/wall/r_wall/plastitanium,
+/area/shuttle/phoenix/ert/medbay)
 "NM" = (
 /obj/structure/rack/shelf,
 /obj/item/ammo_box/advanced/s12gauge/express{
-	pixel_y = -6
+	pixel_y = -4
 	},
 /obj/item/ammo_box/advanced/s12gauge/express{
-	pixel_y = 6
+	pixel_y = 4
+	},
+/obj/item/ammo_box/advanced/s12gauge/express{
+	pixel_y = 12
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "OQ" = (
 /obj/structure/table/abductor,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "OU" = (
 /obj/machinery/power/shuttle_engine/huge{
 	dir = 1
 	},
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "Pf" = (
 /obj/machinery/ore_silo,
+/obj/machinery/light_switch/directional/east,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "Pl" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 4;
@@ -659,10 +1031,15 @@
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "PB" = (
+/obj/machinery/light/blacklight/directional/west,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"PL" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/right)
 "PN" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Right Engine Maintenance"
@@ -672,26 +1049,45 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"PR" = (
+/obj/machinery/light/blacklight/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "PY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "PZ" = (
 /obj/machinery/rnd/production/protolathe/offstation{
 	drop_direction = 8
 	},
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
 "QA" = (
 /obj/machinery/stasis/survival_pod,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "QR" = (
 /obj/machinery/limbgrower/fullupgrade,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"QX" = (
+/turf/closed/wall/r_wall/plastitanium,
+/area/shuttle/phoenix/ert/medbay)
+"Ro" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/airalarm/directional/south,
+/obj/effect/mapping_helpers/airalarm/surgery,
+/obj/effect/mapping_helpers/airalarm/all_access,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
+"RV" = (
+/obj/structure/lattice,
+/turf/closed/wall/r_wall/plastitanium,
+/area/shuttle/phoenix/ert/armory)
 "SA" = (
 /obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
 	pixel_x = 6;
@@ -706,32 +1102,47 @@
 	pixel_y = 2
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
+"Tc" = (
+/obj/machinery/light_switch/directional/south,
+/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/holopad/secure,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
 "Tn" = (
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 1
 	},
 /obj/structure/window/reinforced/plasma/spawner/directional/south,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/right)
+"Ty" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "TQ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/structure/cable,
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "UA" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "UO" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer4{
 	dir = 4;
 	name = "atmos input tank connector"
 	},
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/engine/left)
 "Wv" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Medical Bridge Access"
@@ -739,30 +1150,38 @@
 /obj/effect/mapping_helpers/airlock/access/any/admin/captain,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 "Wy" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/mineral/plastitanium,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "WC" = (
 /obj/structure/rack/shelf,
-/obj/item/ammo_box/magazine/pulse/extended/spawns_empty{
+/obj/item/ammo_box/magazine/pulse/extended{
 	pixel_x = -8
 	},
-/obj/item/ammo_box/magazine/pulse/extended/spawns_empty{
+/obj/item/ammo_box/magazine/pulse/extended{
 	pixel_x = -2
 	},
-/obj/item/ammo_box/magazine/pulse/extended/spawns_empty{
+/obj/item/ammo_box/magazine/pulse/extended{
 	pixel_x = 4
 	},
 /turf/open/floor/pod/light,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "WE" = (
 /obj/machinery/sleeper/self_control,
 /obj/structure/window/reinforced/plasma/spawner/directional/west,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
+"Xr" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/apc/full_charge,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/right)
 "Xv" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Left Engine Maintenance"
@@ -773,13 +1192,37 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
+"XG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/mapping_helpers/apc/full_charge,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/armory)
 "XH" = (
 /obj/machinery/sleeper/self_control,
 /obj/structure/window/reinforced/plasma/spawner/directional/east,
 /turf/open/floor/pod,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
+"Yk" = (
+/turf/closed/wall/r_wall/plastitanium/nodiagonal,
+/area/shuttle/phoenix/ert/medbay)
+"Yu" = (
+/obj/machinery/firealarm/directional/east,
+/obj/machinery/light/blacklight/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/phoenix/ert/common)
+"Yz" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/obj/machinery/light/blacklight/directional/east,
+/obj/machinery/holopad/secure,
+/turf/open/floor/pod/light,
+/area/shuttle/phoenix/ert/medbay)
 "YK" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 4;
@@ -788,13 +1231,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/medbay)
 "YP" = (
 /obj/machinery/mech_bay_recharge_port{
 	dir = 1
 	},
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/reinforced/airless,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/common)
 "Za" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 8;
@@ -804,7 +1248,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/armory)
 "Zj" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Shuttle Bridge"
@@ -814,7 +1258,7 @@
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/phoenix/ert)
+/area/shuttle/phoenix/ert/bridge)
 
 (1,1,1) = {"
 FV
@@ -824,15 +1268,15 @@ FV
 FV
 FV
 FV
-rN
-pm
-pm
-pm
-pm
-pm
-pm
-pm
-rN
+QX
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+Yk
+QX
 FV
 FV
 FV
@@ -849,7 +1293,7 @@ FV
 FV
 FV
 rN
-pm
+Yk
 LM
 uk
 QA
@@ -857,38 +1301,38 @@ eG
 LM
 uk
 QA
-pm
-rN
+Yk
+NL
 Gl
 mE
-rN
-rN
+NL
+NL
 mE
 FV
 "}
 (3,1,1) = {"
 FV
-pm
-pm
-pm
-pm
-pm
-pm
-pm
+jR
+jR
+jR
+jR
+jR
+jR
+Yk
 CT
 Bi
-nW
+CO
 eG
 CT
 Bi
-nW
-pm
-pm
+CO
+Yk
+Yk
 tk
-tv
-pm
-pm
-rN
+qW
+Yk
+Yk
+NL
 FV
 "}
 (4,1,1) = {"
@@ -899,7 +1343,7 @@ Tn
 ih
 PZ
 Nm
-pm
+Yk
 bS
 MR
 qX
@@ -907,13 +1351,13 @@ eG
 bS
 MR
 qX
-pm
+Yk
 dy
 jp
 SA
 Bf
-pm
-rN
+Yk
+NL
 FV
 "}
 (5,1,1) = {"
@@ -923,21 +1367,21 @@ jF
 Tn
 ih
 mo
-jF
-pm
+PL
+Yk
 Af
 iP
-Af
+EK
 Eu
-Af
+EK
 iP
-Af
-pm
+Go
+Yk
 dE
 MR
 Bi
 oO
-pm
+Yk
 mE
 FV
 "}
@@ -950,19 +1394,19 @@ ih
 eU
 jF
 sT
-nW
+CO
 gE
-MR
-MR
-MR
+lC
+lC
+lC
 gE
-TQ
+xH
 Gw
 TQ
-MR
-MR
+tS
+lC
 wb
-pm
+Yk
 mE
 FV
 "}
@@ -973,22 +1417,22 @@ OU
 Tn
 ih
 st
-jF
-pm
+Xr
+Yk
 QR
-oX
-ir
-oX
-ir
-oX
-oX
-pm
-pm
-pm
+NH
+gD
+Yz
+gD
+Gf
+Ro
+ph
+ph
+ph
 Wv
-pm
-pm
-rN
+ph
+ph
+gT
 FV
 "}
 (8,1,1) = {"
@@ -998,23 +1442,23 @@ jF
 Tn
 ih
 ad
-jF
-pm
-Wy
-kC
+wj
+Yk
+dS
+dN
 YK
-Wy
+Yk
 Ax
 Pl
-Wy
-pm
+dS
+ph
 zB
-Er
+If
 UA
-Er
-Er
-pm
-rN
+nM
+DZ
+ph
+ns
 "}
 (9,1,1) = {"
 do
@@ -1028,21 +1472,21 @@ pm
 xl
 vP
 jV
-PB
+fU
 jV
-PB
-uG
-pm
+pX
+Gv
+ph
 zB
-Er
 DZ
+sY
 Hj
-Er
-pm
-rN
+DZ
+ph
+ns
 "}
 (10,1,1) = {"
-rN
+kV
 pm
 pm
 pm
@@ -1055,15 +1499,15 @@ vP
 vp
 JM
 vp
-PB
+pX
 uG
-pm
+ph
 XH
-Er
-Er
-Er
-Er
-Er
+DZ
+Ja
+Ja
+Ja
+yt
 MV
 "}
 (11,1,1) = {"
@@ -1073,46 +1517,46 @@ ml
 rd
 pm
 Di
+AT
 PB
-PB
-PB
+pX
 DT
 uj
 OQ
-uj
-PB
-PB
+vM
+pX
+pX
 BR
 PY
 PY
 rp
-Er
+DZ
 DZ
 zM
 MV
 "}
 (12,1,1) = {"
 Ih
-jF
+nm
 Ny
 ql
 KB
-jV
+gb
+uN
 Aw
-Aw
-Aw
+uN
 gt
-uj
+iy
 rj
 uj
 lv
-PB
-pm
-PY
-DZ
+Tc
+ph
+Ab
+dU
 ok
-Er
-Er
+DZ
+dU
 tQ
 MV
 "}
@@ -1124,25 +1568,25 @@ mA
 pm
 KT
 vP
-PB
-PB
+vJ
+pX
 DT
 uj
 OQ
 hZ
-vP
-vP
+nG
+nG
 Zj
 PY
 PY
 rp
-Er
+DZ
 DZ
 gG
 MV
 "}
 (14,1,1) = {"
-rN
+kV
 pm
 pm
 pm
@@ -1155,176 +1599,176 @@ vP
 xt
 nP
 xt
-vP
+nG
 MK
-pm
+ph
 WE
-Er
-Er
-Er
-Er
+DZ
+Ja
+DZ
+DZ
 Er
 MV
 "}
 (15,1,1) = {"
-do
-jF
-OU
-Tn
-ih
+EU
+wk
+fz
+KU
+Bu
 pT
-dr
+Ty
 pm
 KR
 vP
 jV
-PB
+Yu
 jV
-PB
+pX
 MK
-pm
+ph
 zB
-Er
 DZ
+sY
 Eb
-Er
-pm
-rN
+DZ
+ph
+ns
 "}
 (16,1,1) = {"
-do
-jF
-jF
-Tn
-ih
+EU
+wk
+wk
+KU
+Bu
 lP
-dr
-pm
+rG
+Hx
 Wy
 kC
 Za
-Wy
-Ax
+Hx
+Ba
 Gg
 Wy
-pm
+ph
 zB
-Er
+JF
 iB
-Er
-Er
-pm
-rN
+tP
+DZ
+ph
+ns
 "}
 (17,1,1) = {"
-do
-jF
-jF
-Tn
-ih
+EU
+wk
+wk
+KU
+Bu
 ru
-dr
-pm
+lm
+Hx
+ps
 oX
-oX
-ir
-oX
-ir
-oX
-oX
-pm
-pm
-pm
+sA
+bJ
+sA
+ps
+oi
+ph
+ph
+ph
 DK
-pm
-pm
-rN
+ph
+ph
+gT
 FV
 "}
 (18,1,1) = {"
-do
-jF
-OU
-Tn
-ih
-dr
+EU
+wk
+fz
+KU
+Bu
+cb
 dr
 dk
-oX
+ps
 HR
-MR
-nW
-MR
+jo
+FD
+jo
 Dt
 ir
 nv
+uu
+XG
 ir
-ir
-ir
-nW
-pm
-mE
+iT
+Hx
+jU
 FV
 "}
 (19,1,1) = {"
-do
-jF
-jF
-Tn
-ih
+EU
+wk
+wk
+KU
+Bu
 dr
 UO
-pm
-nW
+Hx
+AC
 NM
-MR
+nq
 WC
-MR
+nq
 eo
-nW
-pm
-HR
+Ku
+Hx
+vz
 nW
 Ga
-nW
-pm
-mE
+PR
+Hx
+jU
 FV
 "}
 (20,1,1) = {"
-do
-jF
-jF
-Tn
-ih
-dr
+EU
+wk
+wk
+KU
+Bu
+rP
 mB
-pm
+Hx
 nW
 NM
-MR
+nq
 WC
-MR
+nq
 eo
 nW
-pm
+Hx
 gW
 My
 My
 nn
-pm
-rN
+Hx
+RV
 FV
 "}
 (21,1,1) = {"
 FV
-pm
-pm
-pm
-pm
-pm
-pm
-pm
+gF
+gF
+gF
+gF
+gF
+gF
+Hx
 nW
 NM
 Ga
@@ -1332,13 +1776,13 @@ WC
 Ga
 eo
 nW
-pm
-pm
+Hx
+Hx
 tv
 tv
-pm
-pm
-rN
+Hx
+Hx
+RV
 FV
 "}
 (22,1,1) = {"
@@ -1349,21 +1793,21 @@ FV
 FV
 FV
 rN
-pm
+Hx
 nW
 FW
 nW
-xC
+GI
 nW
 xC
 nW
-pm
-rN
-mE
-mE
-rN
-rN
-mE
+Hx
+RV
+jU
+jU
+RV
+RV
+jU
 FV
 "}
 (23,1,1) = {"
@@ -1374,15 +1818,15 @@ FV
 FV
 FV
 FV
-rN
-pm
-pm
-pm
-pm
-pm
-pm
-pm
-rN
+ty
+Hx
+Hx
+Hx
+Hx
+Hx
+Hx
+Hx
+ty
 FV
 FV
 FV

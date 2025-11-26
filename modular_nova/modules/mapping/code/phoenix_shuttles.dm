@@ -2,14 +2,13 @@
 /datum/map_template/shuttle/whiteship/personalshuttle_phoenix
 	suffix = "personalshuttle_phoenix"
 	name = "Phoenix Collective Shuttle"
-	description = "A retrofitted and upgraded version of the Personal Travel Shuttle, utilized by Phoenix Collective officials and other crews."
+	description = "A retrofitted and upgraded version of the Personal Travel Shuttle, utilized by Phoenix Collective officials and non-emergency crews."
 	admin_notes = "Has super fucking overpowered shit, you really shouldn't spawn this for non-admins."
 /*----- End of PHOENIX WHITESHIP Shuttle Code -----*/
 
 /*----- PHOENIX COLLECTIVE - "AXION PARIAH" Shuttle Code -----*/
 /area/shuttle/phoenix
 	name = "Axion Pariah"
-	static_lighting = TRUE
 
 /datum/map_template/shuttle/planetary/phoenix
 	prefix = "_maps/shuttles/nova/phoenix/"
@@ -71,7 +70,25 @@
 /area/shuttle/phoenix/ert
 	name = "Black Knife"
 
-/datum/map_template/shuttle/planetary/phoenix/ert
+/area/shuttle/phoenix/ert/common
+	name = "Black Knife Common Room"
+
+/area/shuttle/phoenix/ert/engine/left
+	name = "Black Knife Left Engine Maintenance"
+
+/area/shuttle/phoenix/ert/engine/right
+	name = "Black Knife Right Engine Maintenance"
+
+/area/shuttle/phoenix/ert/medbay
+	name = "Black Knife Emergency Medbay"
+
+/area/shuttle/phoenix/ert/armory
+	name = "Black Knife Armory"
+
+/area/shuttle/phoenix/ert/bridge
+	name = "Black Knife Bridge"
+
+/datum/map_template/shuttle/ert/phoenix
 	prefix = "_maps/shuttles/nova/phoenix/"
 	suffix = "ert_phoenix_shuttle"
 	name = "\"Black Knife\" Phoenix Collective Imperial Shuttle"
