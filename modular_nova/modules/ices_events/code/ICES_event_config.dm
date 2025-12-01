@@ -57,10 +57,10 @@
  * Enabled: Disable from config.
  */
 /datum/round_event_control/alien_infestation
-	max_occurrences = 1
+	max_occurrences = 0
 	intensity_restriction = TRUE
 	weight = MED_EVENT_FREQ
-	min_players = 85
+	min_players = 999
 	intensity_restriction = TRUE
 
 
@@ -174,20 +174,26 @@
 	weight = LOW_EVENT_FREQ
 	intensity_restriction = TRUE
 
-
+/**
+ * Dynamic Tweak
+ *
+ */
+/datum/round_event_control/dynamic_tweak
+	max_occurrences = 0
+	weight = VERY_LOW_EVENT_FREQ
 /**
  * Medical
  *
  */
 /datum/round_event_control/disease_outbreak
 	max_occurrences = 2
-	min_players = 45
+	min_players = 20
 	weight = HIGH_EVENT_FREQ
 	intensity_restriction = TRUE
 
 /datum/round_event_control/disease_outbreak/advanced
 	max_occurrences = 1
-	min_players = 45
+	min_players = 25
 	weight = MED_EVENT_FREQ
 	intensity_restriction = TRUE
 
@@ -197,7 +203,7 @@
 	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/heart_attack
-	max_occurrences = 4 /// Restriction Lessened by ExobytechNova - AFUTU
+	max_occurrences = 4 /// Restriction Tightened by ExobytechNova - AFUTU MK2 (v0.6.5 merge)
 	min_players = 4 /// Restriction Tightened by ExobytechNova - AFUTU
 	weight = LOW_EVENT_FREQ /// Restriction Tightened by ExobytechNova - AFUTU
 
@@ -332,7 +338,7 @@
  */
 /datum/round_event_control/mice_migration
 	max_occurrences = 1
-	weight = LOW_EVENT_FREQ
+	weight = MED_EVENT_FREQ
 
 /**
  * Moldies
@@ -367,7 +373,7 @@
  * Disabled: Unintutivie design and incompatibility with this server
  */
 /datum/round_event_control/radiation_leak
-	max_occurrences = 0
+	max_occurrences = 0 // Disabled by ExoNova - AFUTU MK2 (v0.6.5 merge)
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/radiation_storm
@@ -379,12 +385,12 @@
  *
  */
 /datum/round_event_control/vent_clog
-	max_occurrences = 3 /// Restriction Lessened by ExobytechNova - AFUTU
-	weight = MED_EVENT_FREQ
+	max_occurrences = 3 /// Restriction Lessened by ExobytechNova - AFUTU MK2 (v0.6.5 merge)
+	weight = HIGH_EVENT_FREQ
 
 /datum/round_event_control/vent_clog/major
 	max_occurrences = 1
-	weight = LOW_EVENT_FREQ
+	weight = LOW_EVENT_FREQ /// Restriction Tightened by ExobytechNova - AFUTU MK2 (v0.6.5 merge)
 
 /datum/round_event_control/vent_clog/critical
 	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
@@ -451,11 +457,11 @@
  */
 /datum/round_event_control/stray_cargo
 	max_occurrences = 3
-	weight = LOW_EVENT_FREQ
+	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/stray_cargo/syndicate
 	max_occurrences = 3
-	weight = MED_EVENT_FREQ
+	weight = HIGH_EVENT_FREQ
 
 /**
  * Supermatter Surge
