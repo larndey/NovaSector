@@ -22,4 +22,5 @@ _maps/RandomZLevels/heretic.dmm
 _maps/RandomZLevels/maintsroom.dmm
 
 # ExoNova Away Missions
-_maps/RandomZLevels/phoenix_lockdown.dmm
+_maps/RandomZLevels/exonova/phoenix_thefleshthathates.dmm
+#_maps/RandomZLevels/exonova/admin_exclusive/adminship_trader_phoenix.dmm

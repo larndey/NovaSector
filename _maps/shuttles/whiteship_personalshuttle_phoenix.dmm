@@ -241,8 +241,8 @@
 	dir = 8;
 	name = "atmos input tank connector"
 	},
-/obj/machinery/portable_atmospherics/canister/air,
 /obj/machinery/light/small/directional/south,
+/obj/machinery/space_heater,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/abandoned/engine{
 	name = "Phoenix Shuttle Engine"
@@ -402,15 +402,17 @@
 	name = "Phoenix Shuttle Engine"
 	})
 "vC" = (
-/obj/machinery/space_heater,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/machinery/rnd/production/circuit_imprinter/offstation{
+	drop_direction = 1
+	},
 /turf/open/floor/plating/reinforced,
 /area/shuttle/abandoned/engine{
 	name = "Phoenix Shuttle Engine"
 	})
 "vX" = (
 /obj/structure/cable,
-/obj/machinery/power/smes/magical/cybersun,
+/obj/machinery/power/smes/super,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/abandoned/engine{
 	name = "Phoenix Shuttle Engine"
@@ -621,7 +623,7 @@
 /obj/machinery/button/door/directional/north{
 	normaldoorcontrol = 1;
 	specialfunctions = 4;
-	id = s;
+	id = "wsp_exitbolts";
 	name = "Exterior Bolt Control";
 	pixel_x = -5
 	},
@@ -750,12 +752,14 @@
 	})
 "WL" = (
 /obj/machinery/power/terminal{
-	dir = 4
-	},
-/obj/machinery/rnd/production/circuit_imprinter/offstation{
-	drop_direction = 1
+	dir = 4;
+	cable_layer = 1
 	},
 /obj/machinery/light/small/directional/south,
+/obj/machinery/power/micro_reactor/bapgm{
+	cable_layer = 1
+	},
+/obj/structure/cable/layer1,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/abandoned/engine{
 	name = "Phoenix Shuttle Engine"
@@ -892,7 +896,7 @@ BA
 dq
 OP
 Fo
-bR
+Sk
 dx
 "}
 (8,1,1) = {"
@@ -909,7 +913,7 @@ BI
 ce
 qs
 Fo
-Sk
+bR
 dx
 "}
 (9,1,1) = {"
