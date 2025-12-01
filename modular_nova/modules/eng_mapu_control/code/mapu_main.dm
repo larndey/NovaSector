@@ -8,7 +8,7 @@
 		reaction chamber producing a steady stream of high-power output. Phoenix Collective says it's safe. Mostly."
 	icon_state = "amreactor0_0"
 	base_icon_state = "amreactor0"
-	resistance_flags = INDESTRUCTIBLE
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF | FREEZE_PROOF
 
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
 
