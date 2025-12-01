@@ -241,7 +241,11 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	QDEL_NULL(radio)
 	QDEL_NULL(countdown)
 	if(is_main_engine && GLOB.main_supermatter_engine == src)
-		SSpersistence.reset_delam_counter() // NOVA EDIT ADDITION BEGIN - DELAM SCRAM
+		/// EXOBYTECHNOVA EDIT UPDATE: Do not reset the delamination counter if the game is not actively in progress.
+		/// This allows for admins to delete the Supermatter crystal and replace it with something else during setup time w/o interfering w/ delam incident displays.
+		if(SSticker.current_state == GAME_STATE_PLAYING)
+			SSpersistence.reset_delam_counter() // NOVA EDIT ADDITION BEGIN - DELAM SCRAM
+		/// EXOBYTECHNOVA UPD END
 		GLOB.main_supermatter_engine = null
 	QDEL_NULL(soundloop)
 	return ..()
