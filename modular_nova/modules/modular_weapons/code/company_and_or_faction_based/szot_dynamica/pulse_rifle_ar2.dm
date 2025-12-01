@@ -30,6 +30,7 @@
 
 	spread = 10
 	recoil = 0.3
+	projectile_damage_multiplier = 0.7
 
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -45,6 +46,9 @@
 		most users, the Žaibas has found particular favor among Coalition shock troops and anti-materiel teams who value its ability to punch through \
 		fortifications and powered armor with equal ease.<br><br>\
 		A warning etched near the ejection port reminds users: 'NEPONOVLJATI NAPAJANJE - Kristalna matrika može srušiti se'."
+
+/obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/dna_pin
+	pin = /obj/item/firing_pin/dna
 
 /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf
 	name = "\improper Žaibas Phoenix-MIL pulse rifle"
