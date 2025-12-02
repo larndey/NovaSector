@@ -9615,12 +9615,10 @@
 "kGQ" = (
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
+/obj/structure/table/reinforced,
 /obj/structure/secure_safe/caps_spare{
-	base_icon_state = "floorsafe";
-	icon_state = "floorsafe";
-	density = 0;
-	pixel_x = -7;
-	pixel_y = 8
+	pixel_y = 6;
+	pixel_x = -3
 	},
 /turf/open/floor/iron/dark/small,
 /area/station/command/bridge)
@@ -14372,10 +14370,6 @@
 /obj/effect/landmark/start/cyborg,
 /turf/open/floor/iron/diagonal,
 /area/station/hallway/primary/foreporthall)
-"pYc" = (
-/obj/machinery/computer/libraryconsole/admin_only_do_not_map_in_you_fucker,
-/turf/open/space/basic,
-/area/space)
 "pYs" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -33817,15 +33811,15 @@ eBi
 eFW
 eBi
 irz
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
+hRk
+hRk
+hRk
+hRk
+hRk
+hRk
+hRk
+hRk
+hRk
 ice
 ice
 ice
@@ -34323,7 +34317,7 @@ ice
 ice
 ice
 ice
-ice
+irz
 eBi
 eBi
 eBi
@@ -34579,8 +34573,8 @@ ice
 ice
 ice
 ice
-ice
-ice
+hVy
+irz
 eBi
 lmS
 hct
@@ -34836,8 +34830,8 @@ ice
 ice
 ice
 ice
-ice
-ice
+hVy
+irz
 eBi
 sJj
 hct
@@ -35079,22 +35073,22 @@ ice
 ice
 ice
 ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
+irz
+hRk
+hRk
+hRk
+hRk
+hRk
+hRk
+irz
+irz
+hRk
+hRk
+hRk
+hRk
+irz
+hRk
+irz
 eBi
 uJz
 hct
@@ -35336,11 +35330,11 @@ ice
 ice
 ice
 ice
-ice
-ice
-ice
-ice
-ice
+irz
+irz
+irz
+irz
+irz
 irz
 irz
 irz
@@ -35589,15 +35583,15 @@ ice
 ice
 ice
 ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
-ice
+irz
+irz
+irz
+irz
+hRk
+hRk
+hRk
+hRk
+hRk
 irz
 xuG
 xuG
@@ -36097,10 +36091,10 @@ ice
 ice
 hVy
 hVy
-irz
-irz
-irz
-irz
+hRk
+hRk
+hRk
+hRk
 irz
 irz
 oHs
@@ -37424,7 +37418,7 @@ hoU
 hiU
 sdS
 irz
-ice
+irz
 ice
 ice
 ice
@@ -37681,7 +37675,7 @@ hoU
 hCS
 sdS
 irz
-ice
+hVy
 ice
 ice
 ice
@@ -37938,7 +37932,7 @@ hoU
 mTn
 sdS
 irz
-ice
+hVy
 ice
 ice
 ice
@@ -38195,7 +38189,7 @@ hoU
 mTn
 sdS
 irz
-irz
+xys
 ice
 ice
 ice
@@ -38452,7 +38446,7 @@ qvV
 gvE
 qvV
 irz
-ice
+hVy
 ice
 ice
 ice
@@ -38709,7 +38703,7 @@ rgF
 oIG
 qvV
 irz
-ice
+hVy
 ice
 ice
 ice
@@ -38966,7 +38960,7 @@ jgQ
 oIG
 qvV
 irz
-ice
+hVy
 ice
 ice
 ice
@@ -39223,7 +39217,7 @@ wgY
 pIb
 qvV
 irz
-ice
+irz
 ice
 ice
 ice
@@ -39480,7 +39474,7 @@ gzO
 vUW
 qvV
 irz
-ice
+irz
 ice
 ice
 ice
@@ -39925,7 +39919,7 @@ ice
 ice
 ice
 ice
-pYc
+ice
 ice
 tMW
 tMW
